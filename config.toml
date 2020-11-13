@@ -55,7 +55,7 @@ disableLanguages        = []
     alwaysOnHomepage      = false
 
     [params.intro.pic]
-      src                 = "images/Sad-Pepe-The-Frog-Meme.png"
+      src                 = "/images/photo.jpg"
       shape               = "circle"
       width               = ""
       alt                 = "Picture"
