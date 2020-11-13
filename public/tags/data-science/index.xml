@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data science on Mohamed Kouhou&#39;s personal website</title>
-    <link>https://kouhoumed.github.io/tags/data-science/</link>
+    <link>https://portfolio-98590.web.app/tags/data-science/</link>
     <description>Recent content in data science on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inroduction to data science</title>
-      <link>https://kouhoumed.github.io/blog/data/</link>
+      <link>https://portfolio-98590.web.app/blog/data/</link>
       <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kouhoumed.github.io/blog/data/</guid>
+      <guid>https://portfolio-98590.web.app/blog/data/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
 pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Natural Language Processing (NLP)</title>
-      <link>https://kouhoumed.github.io/blog/nlp/</link>
+      <link>https://portfolio-98590.web.app/blog/nlp/</link>
       <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kouhoumed.github.io/blog/nlp/</guid>
+      <guid>https://portfolio-98590.web.app/blog/nlp/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
 pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Inroduction to machine learning</title>
-      <link>https://kouhoumed.github.io/blog/ml/</link>
+      <link>https://portfolio-98590.web.app/blog/ml/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kouhoumed.github.io/blog/ml/</guid>
+      <guid>https://portfolio-98590.web.app/blog/ml/</guid>
       <description>$$\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }$$
 Test test</description>
     </item>
