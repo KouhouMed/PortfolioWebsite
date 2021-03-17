@@ -8,6 +8,7 @@ tags = ["machine learning", "Blockchain"]
   src = "https://static.blockgeeks.com/wp-content/uploads/2016/09/blockchaintech.jpg"
   alt = "Desert Scene"
   stretch = "stretchH"
-math= true
-markup= "mmark"
 +++
+
+
+Test MathJax $$\int x^3 dx$$
