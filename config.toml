@@ -33,7 +33,7 @@ disableLanguages        = []
   [params.meta]
     description         = ""
     author              = ""
-    favicon             = true
+    favicon             = false
     svg                 = true
     faviconVersion      = "1"
     msColor             = "#ffffff"
