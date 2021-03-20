@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Inroduction to data science</title>
+      <title>Artificial Intellignce vs Machine Learning</title>
       <link>https://portfolio-98590.web.app/blog/data/</link>
       <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
       
@@ -29,13 +29,14 @@ pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Inroduction to machine learning</title>
+      <title>What is machine learning ?</title>
       <link>https://portfolio-98590.web.app/blog/ml/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://portfolio-98590.web.app/blog/ml/</guid>
-      <description>$$\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }$$
-Test test</description>
+      <description>&amp;ldquo;What we want is a machine that can learn from experience&amp;rdquo;
+Alan Turing, 1947
+ What is machine learning ?  Machine learning is a form of artificial intelligence (AI) that allows a system to learn from data without explicitly programming the instructions to be executed. However, machine learning is not a simple process. As the algorithms ingest the training data, it becomes possible to create more accurate models based on that data.</description>
     </item>
     
   </channel>

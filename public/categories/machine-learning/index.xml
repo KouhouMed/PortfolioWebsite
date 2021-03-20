@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Mohamed Kouhou&#39;s personal website</title>
+    <link>https://portfolio-98590.web.app/categories/machine-learning/</link>
+    <description>Recent content in machine learning on Mohamed Kouhou&#39;s personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is machine learning ?</title>
+      <link>https://portfolio-98590.web.app/blog/ml/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://portfolio-98590.web.app/blog/ml/</guid>
+      <description>&amp;ldquo;What we want is a machine that can learn from experience&amp;rdquo;
+Alan Turing, 1947
+ What is machine learning ?  Machine learning is a form of artificial intelligence (AI) that allows a system to learn from data without explicitly programming the instructions to be executed. However, machine learning is not a simple process. As the algorithms ingest the training data, it becomes possible to create more accurate models based on that data.</description>
+    </item>
+    
+  </channel>
+</rss>
