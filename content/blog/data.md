@@ -1,15 +1,14 @@
 +++
-title = "Inroduction to data science"
-description = ""
+title = "Artificial Intellignce vs Machine Learning"
+description = "What is the difference ?"
 author = "Mohamed Kouhou"
 date = "2020-11-05"
-tags = ["machine learning", "data science"]
+tags = ["machine learning", "data science", "artificial intelligence"]
+categories = ["Data Science"]
 [[images]]
   src = "https://thedatascientist.com/wp-content/uploads/2019/06/what-is-data-science.jpg"
   alt = "Desert Scene"
   stretch = "stretchH"
-math= true
-markup= "mmark"
 +++
 
 The text below is just a placeholder
