@@ -1,13 +1,13 @@
 +++
-title = "Artificial Intellignce vs Machine Learning"
-description = "What is the difference ?"
+title = "What is Data Science ?"
+description = "Why Data Science? What are the prerequisites and skills for Data Science ? What is the lifecyle of a Data Science project? In this article, you will find the answers to these questions and more."
 author = "Mohamed Kouhou"
-date = "2020-11-05"
+date = "2019-11-05"
 tags = ["machine learning", "data science", "artificial intelligence"]
 categories = ["Data Science"]
 [[images]]
-  src = "https://thedatascientist.com/wp-content/uploads/2019/06/what-is-data-science.jpg"
-  alt = "Desert Scene"
+  src = "https://madlenportfolio.files.wordpress.com/2017/06/overview-datascience-web-banner.jpg?w=1400"
+  alt = "what is data science"
   stretch = "stretchH"
 +++
 

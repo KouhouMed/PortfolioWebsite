@@ -6,13 +6,22 @@
     <description>Recent content in Tags on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>artificial intelligence</title>
-      <link>https://portfolio-98590.web.app/tags/artificial-intelligence/</link>
-      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      <title>data science</title>
+      <link>https://portfolio-98590.web.app/tags/data-science/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://portfolio-98590.web.app/tags/artificial-intelligence/</guid>
+      <guid>https://portfolio-98590.web.app/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://portfolio-98590.web.app/tags/machine-learning/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://portfolio-98590.web.app/tags/machine-learning/</guid>
       <description></description>
     </item>
     
@@ -26,20 +35,11 @@
     </item>
     
     <item>
-      <title>data science</title>
-      <link>https://portfolio-98590.web.app/tags/data-science/</link>
-      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      <title>artificial intelligence</title>
+      <link>https://portfolio-98590.web.app/tags/artificial-intelligence/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://portfolio-98590.web.app/tags/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://portfolio-98590.web.app/tags/machine-learning/</link>
-      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://portfolio-98590.web.app/tags/machine-learning/</guid>
+      <guid>https://portfolio-98590.web.app/tags/artificial-intelligence/</guid>
       <description></description>
     </item>
     

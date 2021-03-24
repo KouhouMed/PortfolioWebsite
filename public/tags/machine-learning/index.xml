@@ -6,16 +6,16 @@
     <description>Recent content in machine learning on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Artificial Intellignce vs Machine Learning</title>
-      <link>https://portfolio-98590.web.app/blog/data/</link>
-      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      <title>What is machine learning ?</title>
+      <link>https://portfolio-98590.web.app/blog/ml/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://portfolio-98590.web.app/blog/data/</guid>
-      <description>&lt;p&gt;The text below is just a placeholder&lt;/p&gt;
-&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
-pectora summo.&lt;/p&gt;</description>
+      <guid>https://portfolio-98590.web.app/blog/ml/</guid>
+      <description>&amp;ldquo;What we want is a machine that can learn from experience&amp;rdquo;
+Alan Turing, 1947
+ What is machine learning ?  Machine learning is a form of artificial intelligence (AI) that allows a system to learn from data without explicitly programming the instructions to be executed. However, machine learning is not a simple process. As the algorithms ingest the training data, it becomes possible to create more accurate models based on that data.</description>
     </item>
     
     <item>
@@ -38,14 +38,14 @@ pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>What is machine learning ?</title>
-      <link>https://portfolio-98590.web.app/blog/ml/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>What is Data Science ?</title>
+      <link>https://portfolio-98590.web.app/blog/data/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://portfolio-98590.web.app/blog/ml/</guid>
-      <description>&amp;ldquo;What we want is a machine that can learn from experience&amp;rdquo;
-Alan Turing, 1947
- What is machine learning ?  Machine learning is a form of artificial intelligence (AI) that allows a system to learn from data without explicitly programming the instructions to be executed. However, machine learning is not a simple process. As the algorithms ingest the training data, it becomes possible to create more accurate models based on that data.</description>
+      <guid>https://portfolio-98590.web.app/blog/data/</guid>
+      <description>&lt;p&gt;The text below is just a placeholder&lt;/p&gt;
+&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
+pectora summo.&lt;/p&gt;</description>
     </item>
     
   </channel>

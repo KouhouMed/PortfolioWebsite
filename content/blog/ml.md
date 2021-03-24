@@ -2,12 +2,12 @@
 title = "What is machine learning ?"
 description = "Why is this field getting so much attention ? 🤔"
 author = "Mohamed Kouhou"
-date = "2019-03-05"
+date = "2020-12-05"
 tags = ["machine learning", "data science"]
 categories = ["machine learning"]
 [[images]]
-  src = "https://expertsystem.com/wp-content/uploads/2017/03/machine-learning-definition-1024x268.jpeg"
-  alt = "Desert Scene"
+  src = "https://blog.st.com/wp-content/uploads/ST16003_shutterstock_680929729-lprbanner.jpg"
+  alt = "ml"
   stretch = "stretchH"
 +++
 

@@ -5,11 +5,9 @@ author = "Mohamed Kouhou"
 date = "2020-09-05"
 tags = ["machine learning", "data science"]
 [[images]]
-  src = "https://i1.wp.com/aliz.ai/wp-content/uploads/2019/05/Natural-Language-Processing-03-1.png?fit=3042%2C1521&ssl=1"
-  alt = "Desert Scene"
+  src = "https://www.aismartz.com/images/NLP-banner.jpg"
+  alt = "NLP"
   stretch = "stretchH"
-math= true
-markup= "mmark"
 +++
 
 Lorem est tota propiore conpellat pectoribus de

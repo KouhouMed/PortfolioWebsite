@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>machine learning</title>
+      <link>https://portfolio-98590.web.app/categories/machine-learning/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://portfolio-98590.web.app/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Blockchain</title>
       <link>https://portfolio-98590.web.app/categories/blockchain/</link>
@@ -19,18 +28,9 @@
     <item>
       <title>Data Science</title>
       <link>https://portfolio-98590.web.app/categories/data-science/</link>
-      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://portfolio-98590.web.app/categories/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine learning</title>
-      <link>https://portfolio-98590.web.app/categories/machine-learning/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://portfolio-98590.web.app/categories/machine-learning/</guid>
       <description></description>
     </item>
     
