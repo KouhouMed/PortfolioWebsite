@@ -23,17 +23,22 @@
   </url>
   
   <url>
+    <loc>https://portfolio-98590.web.app/categories/data-science/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://portfolio-98590.web.app/tags/data-science/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/tags/machine-learning/</loc>
+    <loc>https://portfolio-98590.web.app/categories/machine-learning/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/categories/machine-learning/</loc>
+    <loc>https://portfolio-98590.web.app/tags/machine-learning/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,12 +108,7 @@
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/categories/data-science/</loc>
-    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://portfolio-98590.web.app/blog/data/</loc>
+    <loc>https://portfolio-98590.web.app/blog/ds/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
   </url>
   

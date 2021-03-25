@@ -4,7 +4,7 @@ description = "Why is this field getting so much attention ? 🤔"
 author = "Mohamed Kouhou"
 date = "2020-12-05"
 tags = ["machine learning", "data science"]
-categories = ["machine learning"]
+categories = ["machine learning", "data science"]
 [[images]]
   src = "https://blog.st.com/wp-content/uploads/ST16003_shutterstock_680929729-lprbanner.jpg"
   alt = "ml"

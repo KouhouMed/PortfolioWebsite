@@ -8,7 +8,16 @@
     <language>en</language>
     <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>machine learning</title>
+      <title>Data Science</title>
+      <link>https://portfolio-98590.web.app/categories/data-science/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://portfolio-98590.web.app/categories/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
       <link>https://portfolio-98590.web.app/categories/machine-learning/</link>
       <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
       
@@ -22,15 +31,6 @@
       <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://portfolio-98590.web.app/categories/blockchain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Science</title>
-      <link>https://portfolio-98590.web.app/categories/data-science/</link>
-      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://portfolio-98590.web.app/categories/data-science/</guid>
       <description></description>
     </item>
     

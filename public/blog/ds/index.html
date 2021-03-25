@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>What is Data Science ? - Mohamed Kouhou&#39;s personal website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.76.5" /><meta itemprop="name" content="What is Data Science ?">
+<meta itemprop="description" content="Why Data Science? What are the prerequisites and skills for Data Science ? What is the lifecyle of a Data Science project? In this article, you will find the answers to these questions and more.">
+<meta itemprop="datePublished" content="2019-11-05T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-11-05T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1422">
+<meta itemprop="image" content="">
+
+
+
+<meta itemprop="keywords" content="machine learning,data science,artificial intelligence," />
+<meta property="og:title" content="What is Data Science ?" />
+<meta property="og:description" content="Why Data Science? What are the prerequisites and skills for Data Science ? What is the lifecyle of a Data Science project? In this article, you will find the answers to these questions and more." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://portfolio-98590.web.app/blog/ds/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2019-11-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-11-05T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+
+<meta name="twitter:title" content="What is Data Science ?"/>
+<meta name="twitter:description" content="Why Data Science? What are the prerequisites and skills for Data Science ? What is the lifecyle of a Data Science project? In this article, you will find the answers to these questions and more."/>
+<meta name="twitter:site" content="@MohamedKouhou"/>
+<link rel="stylesheet" href="/css/bundle.min.d9e04ae08c9b3049b766dbd4aeab7d862c5ea1d13679b621490e0f5df5507497.css" integrity="sha256-2eBK4IybMEm3ZtvUrqt9hixeodE2ebYhSQ4PXfVQdJc="><link rel="stylesheet" href="/css/add-on.css">
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About Me</a>
+        
+      
+        
+          
+          <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=What%20is%20Data%20Science%20%3f&amp;url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f&amp;title=What%20is%20Data%20Science%20%3f" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f&amp;title=What%20is%20Data%20Science%20%3f" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f&amp;description=What%20is%20Data%20Science%20%3f" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://portfolio-98590.web.app/images/photo.jpg" class="circle" width="100" alt="Picture" /></a>
+  <header>
+    <h1>Mohamed Kouhou</h1>
+  </header>
+  <main>
+    <p>Data Engineering Student at The National Institute of Posts and Telecommunications, Rabat, Morocco <br> <strong><a href='#' style='color : rgb(75, 145, 216)'>→My résumé←</a></strong></p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+        <li><a href="//github.com/KouhouMed" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+<li><a href="//stackoverflow.com/users/13006431" target="_blank" rel="noopener" title="Stack Overflow" class="fab fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@mohamedkouhou" target="_blank" rel="noopener" title="Medium" class="fab fa-medium"></a></li>
+<li><a href="//www.linkedin.com/in/mkouhou/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=%2b212623159586" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/MohamedKouhou" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:mohamedkouhou@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/blog/ds/">What is Data Science ?</a></h2>
+    
+    
+      <p>Why Data Science? What are the prerequisites and skills for Data Science ? What is the lifecyle of a Data Science project? In this article, you will find the answers to these questions and more.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2019-11-05 00:00:00 &#43;0000 UTC">November 5, 2019</time>
+    <p>Mohamed Kouhou</p>
+    <p>7-Minute Read</p>
+  </div>
+</header>
+
+    <div id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=What%20is%20Data%20Science%20%3f&amp;url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f&amp;title=What%20is%20Data%20Science%20%3f" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f&amp;title=What%20is%20Data%20Science%20%3f" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f&amp;description=What%20is%20Data%20Science%20%3f" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fportfolio-98590.web.app%2fblog%2fds%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </div>
+    <div class="content">
+      <a href="/blog/ds/" class="image" style="--bg-image: url('https://madlenportfolio.files.wordpress.com/2017/06/overview-datascience-web-banner.jpg?w=1400');">
+    <img class="" src="https://madlenportfolio.files.wordpress.com/2017/06/overview-datascience-web-banner.jpg?w=1400" alt="what is data science">
+  </a>
+      <blockquote>
+<p>“You can have data without information, but you cannot have information without data.” – <strong>Daniel Keys Moran</strong></p>
+</blockquote>
+<p>Data science is one of the most debated topics in the industries these days. Its popularity has grown over the years, and companies have started implementing data science techniques to grow their business and increase customer satisfaction. According to a <a href="https://www.sciencedaily.com/releases/2013/05/130522085217.htm" target="_blank">study</a> conducted in 2013, 90% of the world&rsquo;s data has been produced within the previous two years. In 2020, the global amount of data is projected to reach 59 zettabytes. Given the massive amount of data that is being created every second, people in almost all industries have become concerned as to how to make use of all this data being produced.
+This is when Data Science comes into play.</p>
+<h2 id="what-is-data-science-">What is Data Science ?</h2>
+<p>Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions. Data science uses complex machine learning algorithms to build predictive models.</p>
+<blockquote>
+<p>&ldquo;<strong>Data Scientist (n.)</strong>: Person who is better at statistics than any software engineer and better at software engineering than any statistician.&rdquo; – <strong>Josh Wells</strong></p>
+</blockquote>
+  <center><img src="https://miro.medium.com/max/1986/1*mgXvzNcwfpnBawI6XTkVRg.png" width="530" height="500"/></center>
+<p>Data science combines the scientific method, math and statistics, specialized programming, advanced analytics, AI, and even storytelling to uncover and explain the business insights buried in data.It envolves preparing raw data to make it ready for processing, performing data analysis, and presenting the results to reveal patterns abd enable stakeholders to extract useful insights.</p>
+<p>Data preparation envolves cleaning, aggregating, and manipulating data in a way that makes it suitable for the desired type of processing. As for analysis, it is requires algorithms and AI models to explore the data and extract patterns. Decisions will be taken based on the predictions that have been with the models.</p>
+<p>In order for these models to be able to predict reliably, they have to be optimized through training. And the accuracy of the predictions must be validated through scientifically designed tests and experiments.</p>
+<h2 id="what-are-the-prerequisites-and-skills-for-data-science-">What are the prerequisites and skills for Data Science ?</h2>
+<p>a data scientist must be able to do the following tasks :</p>
+<ul>
+<li>Apply mathematics, statistics, and the scientific method</li>
+<li>Use a variety of tools and techniques for evaluating and preparing data (SQL, data mining, data integration methods&hellip;)</li>
+<li>Extract insights from data using predictive analytics and artificial intelligence (AI), including machine learning and deep learning models</li>
+<li>Write applications that automate data processing and calculations</li>
+<li>Tell stories that clearly depict the results of the analysis process (this is usually done through visualization and other techniques)</li>
+<li>Explain how these results can be used to solve business problems</li>
+</ul>
+<h4 id="technical-prerequisites-for-data-science">Technical prerequisites for Data Science</h4>
+<p>Here are some technical demands you should know before setting of a data science journey :</p>
+<ol>
+<li>
+<p><strong>Mathematics</strong> : data science requires some basic knowledge in certain mathematical concepts such as <strong>calculus</strong>, <strong>linear algebra</strong>, <strong>probability</strong>, <strong>statistics</strong>, <strong>information theory</strong>&hellip; data scientists should be familiar with these concepts in order to be able to fully understand the magic behind statistical and machine learning models, and thus be capable of adapting them to their needs.</p>
+</li>
+<li>
+<p><strong>Programming</strong> : some programming skills are needed to execute successful data science projects. It is not required to be a hardcore programmer to help analyze widespread parts of data, to write quotes efficiently to explain the problem area and work with big data. Data science works on programming tools like Python and R. These concepts will help the candidate to journey a long way into the expertise of data science.</p>
+</li>
+<li>
+<p><strong>Databases</strong> : they are an essential component of data science. Data scientists need to understand how databases work, how to manage them, and how to extract data from them.</p>
+</li>
+<li>
+<p><strong>Machine learning</strong> : it is one of the most fundamental concepts of data science. Data Scientists need to have a solid grasp on ML in addition to basic knowledge of statistics.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Skills</th>
+<th>Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Analysis</td>
+<td>R, Python, Statistics</td>
+<td>SAS, Jupyter, R Studio, MATLAB,  Excel, RapidMiner</td>
+</tr>
+<tr>
+<td>Data Warehousing</td>
+<td>ETL, SQL, Hadoop,  Apache Spark</td>
+<td>Informatica/ Talend, AWS Redshift</td>
+</tr>
+<tr>
+<td>Data Visualization</td>
+<td>R, Python libraries</td>
+<td>Jupyter, Tableau, Cognos, RAW</td>
+</tr>
+<tr>
+<td>Machine Learning</td>
+<td>Python, Algebra, Machine  learning algorithms, Statistics</td>
+<td>Spark MLib, Mahout, Azure ML studio</td>
+</tr>
+</tbody>
+</table>
+<figure>
+  <img src="https://datascience.foundation/img/pdf_images/range_of_technologies_brands_in_data_science.png" alt="ds brands" style="width:100%">
+  <figcaption>Range of Technologies Brands in Data Science</figcaption>
+</figure>
+<h2 id="data-science-lifecycle">Data Science Lifecycle</h2>
+<figure>
+  <img src="https://i.ibb.co/YWKMftr/lifecycle.jpg" alt="ds lifecycle" style="width:100%">
+  <figcaption>Data Science Lifecycle</figcaption>
+</figure>
+<p>Data science projects are conducted through several processes, so it is important to have a general structure to follow. There are no rules or stricts procedures to follow in a data science project. However, the following lifecycle outlines the major stages that projects typically execute, often iteratively:</p>
+<ol>
+<li><strong>Business Understanding</strong> : This is the first step of all data science projects. It includes two main tasks :</li>
+</ol>
+<ul>
+<li><em>Define objectives</em>: Work with your customer and other stakeholders to understand and identify the business problems. Formulate questions that define the business goals that the data science techniques can target.</li>
+<li><em>Identify data sources</em>: Find the relevant data that helps you answer the questions that define the objectives of the project.</li>
+</ul>
+<ol start="2">
+<li>
+<p><strong>Data Collection</strong> : It is not an easy process. It involves so many tasks such as identifying your data requirements, deciding on a method of data collection, and finally organizing a data collection plan that synthesizes the most important aspects of your program.</p>
+</li>
+<li>
+<p><strong>Data Preparation</strong> : This step is also known as <strong>Data Cleaning</strong> or <strong>Data Wrangling</strong>. It includes steps like selecting the relevant data, integrating the data by merging the data sets, cleaning it, handling the missing values by either removing them or imputing them with relevant data, treating erroneous data by removing them, also check for outliers and handle them. Constructing new data, derive new features from existing ones by using the feature engineering. Format the data into the desired structure, remove unwanted columns and features. Data preparation is the most time consuming as it takes up to <strong>80%</strong> of the overall project time, yet it’s the most important step in the entire life cycle.</p>
+</li>
+<li>
+<p><strong>Exploratory Data Analysis (EDA)</strong> : This is not a formal process with a strict set of rules. It is rather a mindset that incites you to analyze and investigate your data sets and summarize their main characteristics, often employing data visualization methods. It helps you to figure out the best way to manipulate your data. In this stage, you may want to do the following tasks :</p>
+</li>
+</ol>
+<ul>
+<li>Generate questions about your data</li>
+<li>Search for answers by visualising, transforming, and modelling your data</li>
+<li>Use what you learn to refine your questions and/or generate new questions</li>
+</ul>
+<ol start="5">
+<li>
+<p><strong>Modeling</strong> : Data modeling is the process of creating a visual representation of either a whole information system or parts of it to communicate connections between data points and structures. The goal is to illustrate the types of data used and stored within the system, the relationships among these data types, the ways the data can be grouped and organized and its formats and attributes.Data modeling employs standardized schemas and formal techniques. This provides a common, consistent, and predictable way of defining and managing data resources across an organization, or even beyond.</p>
+</li>
+<li>
+<p><strong>Model Evaluation</strong> : In the end we need to evaluate the model by measuring the accuracy (How well the model performs i.e. does it describe the data accurately) and relevance (Does it answer the original question that is set out to answer). We also need to make sure there is a correct balance between performance and generalizability, which means the model created should not be biased and should be a generalized model.</p>
+</li>
+<li>
+<p><strong>Model Deployment</strong> : In order to start using a model for practical decision-making, it needs to be effectively deployed into production. Depending on the requirements, the deployment phase can be as simple as generating a report or as complex as implementing a repeatable data science process. In many cases, it will be the customer, not the data analyst, who will carry out the deployment steps. For example, a credit card company may want to deploy a trained model or set of models (e.g., neural networks, meta-learner) to quickly identify transactions, which have a high probability of being fraudulent. However, even if the analyst will not carry out the deployment effort it is important for the customer to understand up front what actions will need to be carried out in order to actually make use of the created models.</p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>In the end, we won&rsquo;t be wrong to say that Data Science is driving the future of almost all industries as it is the fastest growing discipline in computer science and IT with all its active community and the new tools being developped continuously.</p>
+
+    </div>
+    <footer>
+      <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/data-science/">Data Science</a></li>
+        
+          <li><a class="article-terms-link" href="/categories/machine-learning/">Machine Learning</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/machine-learning/">machine learning</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/data-science/">data science</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/artificial-intelligence/">artificial intelligence</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+    </footer>
+  </article>
+  
+    
+  <article class="post">
+    
+    <div>
+      <h2 id="say-something">Say Something</h2>
+        <form id="comment-form" class="new-comment" method="POST">
+          
+          <h3 class='reply-notice hidden'>
+            <span class='reply-name'></span>
+          </h3>
+
+          
+          <input type="hidden" name="options[entryId]" value="b04b634c82bf9e57ff8d1689b3086c90">
+          <input type='hidden' name='fields[replyThread]' value=''>
+          <input type='hidden' name='fields[replyID]' value=''>
+          <input type='hidden' name='fields[replyName]' value=''>
+
+          
+          <input required name='fields[name]' type='text' placeholder='Your Name'>
+          <input name='fields[website]' type='text' placeholder='Your Website'>
+          <input required name='fields[email]' type='email' placeholder='Your Email'>
+          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+
+          
+          
+
+          
+          <div class='submit-notice'>
+            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+          </div>
+
+          
+          <input type='submit' value='Submit' class='button'>
+          <input type='submit' value='Submitted' class='hidden button' disabled>
+          <input type='reset' value='Reset' class='button'>
+        </form>
+    </div>
+
+    
+    <div>
+      <h2>Comments</h2>
+    </div>
+  </article>
+
+
+  
+  <div class="pagination">
+    
+      <a href="/blog/nlp/" class="button left"><span>Natural Language Processing (NLP)</span></a>
+    
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="/blog/ml/" class="image" style="--bg-image: url('https://blog.st.com/wp-content/uploads/ST16003_shutterstock_680929729-lprbanner.jpg');">
+    <img class="" src="https://blog.st.com/wp-content/uploads/ST16003_shutterstock_680929729-lprbanner.jpg" alt="ml">
+  </a>
+        <header>
+          <h2><a href="/blog/ml/">What is machine learning ?</a></h2>
+          <time class="published" datetime="2020-12-05 00:00:00 &#43;0000 UTC">December 5, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/blog/blockchain/" class="image" style="--bg-image: url('https://www.allthingsdistributed.com/images/blockchain-banner.jpg');">
+    <img class="" src="https://www.allthingsdistributed.com/images/blockchain-banner.jpg" alt="blockchain">
+  </a>
+        <header>
+          <h2><a href="/blog/blockchain/">What is Blockchain Technology?</a></h2>
+          <time class="published" datetime="2020-11-05 00:00:00 &#43;0000 UTC">November 5, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/blog/nlp/" class="image" style="--bg-image: url('https://www.aismartz.com/images/NLP-banner.jpg');">
+    <img class="" src="https://www.aismartz.com/images/NLP-banner.jpg" alt="NLP">
+  </a>
+        <header>
+          <h2><a href="/blog/nlp/">Natural Language Processing (NLP)</a></h2>
+          <time class="published" datetime="2020-09-05 00:00:00 &#43;0000 UTC">September 5, 2020</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">See More</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/data-science/">data-science<span class="count">2</span></a>
+          
+          <li>
+              <a href="/categories/machine-learning/">machine-learning<span class="count">2</span></a>
+          
+          <li>
+              <a href="/categories/blockchain/">blockchain<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+        <li><a href="//github.com/KouhouMed" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+<li><a href="//stackoverflow.com/users/13006431" target="_blank" rel="noopener" title="Stack Overflow" class="fab fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@mohamedkouhou" target="_blank" rel="noopener" title="Medium" class="fab fa-medium"></a></li>
+<li><a href="//www.linkedin.com/in/mkouhou/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=%2b212623159586" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/MohamedKouhou" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:mohamedkouhou@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    © 2020 Mohamed Kouhou&#39;s personal website
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.5955090a3253deadcd66071270aa2274dabe15ffc97094cec252d87b6f3f00bf.js" integrity="sha256-WVUJCjJT3q3NZgcScKoidNq&#43;Ff/JcJTOwlLYe28/AL8="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>
