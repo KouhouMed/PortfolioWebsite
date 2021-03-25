@@ -30,6 +30,7 @@ disableLanguages        = []
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = false
 
+
   [params.meta]
     description         = ""
     author              = ""
@@ -204,3 +205,4 @@ disableLanguages        = []
   mastodon              = ""
   # Email
   email                 = "mohamedkouhou@gmail.com"
+       

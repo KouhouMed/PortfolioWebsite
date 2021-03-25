@@ -22,7 +22,8 @@ categories = ["Data Science","Machine Learning"]
 
   >"**Data Scientist (n.)**: Person who is better at statistics than any software engineer and better at software engineering than any statistician." – **Josh Wells**
 
-  <center><img src="https://miro.medium.com/max/1986/1*mgXvzNcwfpnBawI6XTkVRg.png" width="530" height="500"/></center>
+  <center><img src="https://miro.medium.com/max/1986/1*mgXvzNcwfpnBawI6XTkVRg.png" width="530" height="500" style="width: 100%;
+  height: auto"/></center>
  
 Data science combines the scientific method, math and statistics, specialized programming, advanced analytics, AI, and even storytelling to uncover and explain the business insights buried in data.It envolves preparing raw data to make it ready for processing, performing data analysis, and presenting the results to reveal patterns abd enable stakeholders to extract useful insights. 
 
