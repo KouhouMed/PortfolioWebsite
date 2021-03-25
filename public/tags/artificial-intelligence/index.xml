@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>artificial intelligence on Mohamed Kouhou&#39;s personal website</title>
-    <link>https://portfolio-98590.web.app/tags/artificial-intelligence/</link>
+    <link>https://kouhoumed.site/tags/artificial-intelligence/</link>
     <description>Recent content in artificial intelligence on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.site/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is Data Science ?</title>
-      <link>https://portfolio-98590.web.app/blog/ds/</link>
+      <link>https://kouhoumed.site/blog/ds/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://portfolio-98590.web.app/blog/ds/</guid>
+      <guid>https://kouhoumed.site/blog/ds/</guid>
       <description>“You can have data without information, but you cannot have information without data.” – Daniel Keys Moran
  Data science is one of the most debated topics in the industries these days. Its popularity has grown over the years, and companies have started implementing data science techniques to grow their business and increase customer satisfaction. According to a study conducted in 2013, 90% of the world&amp;rsquo;s data has been produced within the previous two years.</description>
     </item>

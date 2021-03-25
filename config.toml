@@ -1,6 +1,6 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
-baseurl                 = "https://portfolio-98590.web.app/"
+baseurl                 = "https://kouhoumed.site/"
 DefaultContentLanguage  = "en"
 title                   = "Mohamed Kouhou's personal website"
 theme                   = "hugo-future-imperfect-slim"

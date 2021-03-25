@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo Future Imperfect Slim en français</title>
-    <link>https://portfolio-98590.web.app/fr/tags/</link>
+    <link>https://kouhoumed.site/fr/tags/</link>
     <description>Recent content in Tags on Hugo Future Imperfect Slim en français</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language><atom:link href="https://portfolio-98590.web.app/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language><atom:link href="https://kouhoumed.site/fr/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

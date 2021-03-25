@@ -3,112 +3,112 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://portfolio-98590.web.app/blog/</loc>
+    <loc>https://kouhoumed.site/blog/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/categories/</loc>
-    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://portfolio-98590.web.app/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://portfolio-98590.web.app/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://portfolio-98590.web.app/categories/data-science/</loc>
-    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://portfolio-98590.web.app/tags/data-science/</loc>
-    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://portfolio-98590.web.app/categories/machine-learning/</loc>
-    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://portfolio-98590.web.app/tags/machine-learning/</loc>
-    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://portfolio-98590.web.app/</loc>
+    <loc>https://kouhoumed.site/categories/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://portfolio-98590.web.app/fr/"
+                href="https://kouhoumed.site/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://portfolio-98590.web.app/"
+                href="https://kouhoumed.site/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/tags/</loc>
+    <loc>https://kouhoumed.site/categories/data-science/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kouhoumed.site/tags/data-science/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kouhoumed.site/categories/machine-learning/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kouhoumed.site/tags/machine-learning/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kouhoumed.site/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://portfolio-98590.web.app/fr/tags/"
+                href="https://kouhoumed.site/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://portfolio-98590.web.app/tags/"
+                href="https://kouhoumed.site/"
                 />
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/blog/ml/</loc>
+    <loc>https://kouhoumed.site/tags/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kouhoumed.site/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kouhoumed.site/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kouhoumed.site/blog/ml/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/about/</loc>
+    <loc>https://kouhoumed.site/about/</loc>
     <lastmod>2020-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/tags/blockchain/</loc>
+    <loc>https://kouhoumed.site/tags/blockchain/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/categories/blockchain/</loc>
+    <loc>https://kouhoumed.site/categories/blockchain/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/blog/blockchain/</loc>
+    <loc>https://kouhoumed.site/blog/blockchain/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/blog/nlp/</loc>
+    <loc>https://kouhoumed.site/blog/nlp/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/tags/artificial-intelligence/</loc>
+    <loc>https://kouhoumed.site/tags/artificial-intelligence/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://portfolio-98590.web.app/blog/ds/</loc>
+    <loc>https://kouhoumed.site/blog/ds/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
   </url>
   

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on Mohamed Kouhou&#39;s personal website</title>
-    <link>https://portfolio-98590.web.app/tags/blockchain/</link>
+    <link>https://kouhoumed.site/tags/blockchain/</link>
     <description>Recent content in Blockchain on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://portfolio-98590.web.app/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.site/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is Blockchain Technology?</title>
-      <link>https://portfolio-98590.web.app/blog/blockchain/</link>
+      <link>https://kouhoumed.site/blog/blockchain/</link>
       <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://portfolio-98590.web.app/blog/blockchain/</guid>
+      <guid>https://kouhoumed.site/blog/blockchain/</guid>
       <description>Test MathJax $$\int x^3 dx$$</description>
     </item>
     
