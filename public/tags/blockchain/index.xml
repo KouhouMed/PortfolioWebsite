@@ -14,7 +14,7 @@
       
       <guid>https://kouhoumed.site/blog/blockchain/</guid>
       <description>MathJax Test $$\int x^3 dx$$
-Code highlighting Test import pandas as pd import numpy as np # for Box-Cox Transformation from scipy import stats # for min_max scaling from mlxtend.preprocessing import minmax_scaling # plotting modules import seaborn as sns import matplotlib.pyplot as plt # read in all our data kickstarters_2017 = pd.read_csv(&amp;#34;../input/kickstarter-projects/ks-projects-201801.csv&amp;#34;) # set seed for reproducibility np.random.seed(0) </description>
+Code highlighting Test if(FALSE) { &amp;#34;This is a demo for multi-line comments and it should be put inside either a single OR double quote&amp;#34; } myString &amp;lt;- &amp;#34;Hello, World!&amp;#34; print ( myString) </description>
     </item>
     
   </channel>

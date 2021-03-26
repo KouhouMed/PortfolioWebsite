@@ -18,25 +18,14 @@ $$\int x^3 dx$$
 
 # Code highlighting Test 
 
-```python
+```r
 
-import pandas as pd
-import numpy as np
+if(FALSE) {
+   "This is a demo for multi-line comments and it should be put inside either a 
+      single OR double quote"
+}
 
-# for Box-Cox Transformation
-from scipy import stats
-
-# for min_max scaling
-from mlxtend.preprocessing import minmax_scaling
-
-# plotting modules
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# read in all our data
-kickstarters_2017 = pd.read_csv("../input/kickstarter-projects/ks-projects-201801.csv")
-
-# set seed for reproducibility
-np.random.seed(0)
+myString <- "Hello, World!"
+print ( myString)
 
 ```
