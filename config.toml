@@ -29,12 +29,12 @@ disableLanguages        = []
   removeBlur            = false
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = false
-
+  
 
   [params.meta]
     description         = ""
     author              = ""
-    favicon             = false
+    favicon             = true
     svg                 = true
     faviconVersion      = "1"
     msColor             = "#ffffff"
