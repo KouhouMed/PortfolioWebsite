@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>What is machine learning ? - Mohamed Kouhou&#39;s personal website</title>
+<title>Supervised Learning algorithms with R - Mohamed Kouhou&#39;s personal website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -18,28 +18,28 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.76.5" /><meta itemprop="name" content="What is machine learning ?">
-<meta itemprop="description" content="Why is this field getting so much attention ? 🤔">
+<meta name="generator" content="Hugo 0.76.5" /><meta itemprop="name" content="Supervised Learning algorithms with R">
+<meta itemprop="description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language">
 <meta itemprop="datePublished" content="2020-12-05T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-12-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="933">
+<meta itemprop="wordCount" content="321">
 <meta itemprop="image" content="">
 
 
 
 <meta itemprop="keywords" content="machine learning,data science," />
-<meta property="og:title" content="What is machine learning ?" />
-<meta property="og:description" content="Why is this field getting so much attention ? 🤔" />
+<meta property="og:title" content="Supervised Learning algorithms with R" />
+<meta property="og:description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kouhoumed.site/blog/ml/" />
+<meta property="og:url" content="https://kouhoumed.site/blog/supervised-learning-algorithms-r/" />
 <meta property="og:image" content="" />
 <meta property="article:published_time" content="2020-12-05T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-12-05T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content=""/>
 
-<meta name="twitter:title" content="What is machine learning ?"/>
-<meta name="twitter:description" content="Why is this field getting so much attention ? 🤔"/>
+<meta name="twitter:title" content="Supervised Learning algorithms with R"/>
+<meta name="twitter:description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language"/>
 <meta name="twitter:site" content="@MohamedKouhou"/>
 <link rel="stylesheet" href="/css/bundle.min.d9e04ae08c9b3049b766dbd4aeab7d862c5ea1d13679b621490e0f5df5507497.css" integrity="sha256-2eBK4IybMEm3ZtvUrqt9hixeodE2ebYhSQ4PXfVQdJc="><link rel="stylesheet" href="/css/add-on.css">
   <script>
@@ -122,37 +122,37 @@
 
   
     
-    <a href="//twitter.com/share?text=What%20is%20machine%20learning%20%3f&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f&amp;title=What%20is%20machine%20learning%20%3f" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f&amp;title=What%20is%20machine%20learning%20%3f" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f&amp;description=What%20is%20machine%20learning%20%3f" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -228,16 +228,16 @@
     <header>
   <div class="title">
     
-      <h2><a href="/blog/ml/">What is machine learning ?</a></h2>
+      <h2><a href="/blog/supervised-learning-algorithms-r/">Supervised Learning algorithms with R</a></h2>
     
     
-      <p>Why is this field getting so much attention ? 🤔</p>
+      <p>We will discover some of the most common supervised learning algorithms and their implementation with R programming language</p>
     
   </div>
   <div class="meta">
     <time datetime="2020-12-05 00:00:00 &#43;0000 UTC">December 5, 2020</time>
     <p>Mohamed Kouhou</p>
-    <p>5-Minute Read</p>
+    <p>2-Minute Read</p>
   </div>
 </header>
 
@@ -249,37 +249,37 @@
 
   
     
-    <a href="//twitter.com/share?text=What%20is%20machine%20learning%20%3f&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f&amp;title=What%20is%20machine%20learning%20%3f" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f&amp;title=What%20is%20machine%20learning%20%3f" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f&amp;description=What%20is%20machine%20learning%20%3f" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.site%2fblog%2fml%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -287,80 +287,59 @@
 
     </div>
     <div class="content">
-      <a href="/blog/ml/" class="image" style="--bg-image: url('https://blog.st.com/wp-content/uploads/ST16003_shutterstock_680929729-lprbanner.jpg');">
-    <img class="" src="https://blog.st.com/wp-content/uploads/ST16003_shutterstock_680929729-lprbanner.jpg" alt="ml">
+      <a href="/blog/supervised-learning-algorithms-r/" class="image" style="--bg-image: url('https://i.ibb.co/rFW5Mc2/supervised-learning-r.png');">
+    <img class="" src="https://i.ibb.co/rFW5Mc2/supervised-learning-r.png" alt="ml">
   </a>
-      <blockquote>
-<p>&ldquo;What we want is a machine that can learn from experience&rdquo;<br>
-           <strong>Alan Turing, 1947</strong></p>
+      <h1 id="qui-post-captus-nato-sub">Qui post captus nato sub</h1>
+<h2 id="colerent-tumebat-biceps">Colerent tumebat biceps</h2>
+<p>Lorem markdownum Pachyne illa <strong>defensae</strong>, rupit fluit revocare cum veluti.
+Adversum vulnera.</p>
+<pre><code>socialName(urlDirectSidebar, desktop_c_redundancy(kdePaperUrl,
+        integrated_software_clean, wordartTagFriendly));
+if (53 + publishingRw - modifier_wheel_flash != add) {
+    fddi_vdu_bit.drm_cache_it += facebook.cyberspaceRealLed(gnutella,
+            dcim_character_bios + rpm, 56 + finderBiometrics);
+    faqDisk += vistaCapsThunderbolt(p_kindle, 1, favorites) - kbps + botnet;
+    storageMinisiteCommand -= fatArrayFavicon;
+}
+tooltipAlertExpress = mediaRdramNamespace.cmsDiskEncoding.cdMashup(5,
+        barebonesMiddleware);
+</code></pre>
+<h2 id="vigilat-animas-tendunt">Vigilat animas tendunt</h2>
+<p>Enim humumque, nec membra orbem, piae namque <strong>sperata</strong>. Favorque eversam
+figuris ad modo sub <em>genua</em> ferox boves insilit fuerunt medioque vellera
+amplexus Lucifer his vindice. Feram caliginis relicta forent, volubilitas ferro
+adhibere fletus; tamen adicit animi, micante acie sic haud carcere noxae.
+Miserabile luctus haec!</p>
+<blockquote>
+<p>Cernis nudabant concutio. Quas aurea Phrygibus aethera, per viva temporis vana
+ore in atque, ut haec est manus. Dictis pelle coeptaeque haesit venit via nec
+Chiae paterni et tunc. Protinus <em>passis fumida</em>, circumtulit minus grata et
+mihi suos litora anxia, Romanique, cur. Ferit in nunc ego; puellas est operis;
+repercusso hac omnia Troiae: fecissem ignibus avidis me sumere Pedasus!</p>
 </blockquote>
-<h3 id="what-is-machine-learning-">What is machine learning ?</h3>
-<p>Machine learning is a form of artificial intelligence (AI) that allows a system to learn from data without explicitly programming the instructions to be executed. However, machine learning is not a simple process. As the algorithms ingest the training data, it becomes possible to create more accurate models based on that data. A machine learning model is the output generated when you train your machine learning algorithm with data. After training, when you provide input data to a model, you receive an output result. For example, a predictive algorithm creates a predictive model. Then, when you provide data to the predictive model, you receive a forecast that is determined by the data that was used to train the model.</p>
-<h3 id="iterative-learning-from-data">Iterative learning from data</h3>
-<p>Machine learning allows models to train on datasets before being deployed. Some machine learning models are online and operate continuously. This iterative process of inline models improves the types of associations established between data elements. Due to their complexity and size, these trends and associations may not be detected by a human observer. Once a model has been trained, it can be used in real time to learn from the data. Improvements in accuracy result from the training and automation process that is part of machine learning.</p>
-<h3 id="machine-learning-approaches">Machine learning approaches</h3>
-<p>Machine learning techniques are needed to improve the accuracy of predictive models. Depending on the nature of the business problem being addressed, there are different approaches that vary depending on the type and volume of data. In this section, we discuss the categories of machine learning.</p>
-<h4 id="supervised-learning">Supervised learning</h4>
-<p><img src="https://bigdata-madesimple.com/wp-content/uploads/2018/02/Machine-Learning-Explained1.png" alt="supervised learning">
-Supervised learning usually begins with a well-defined data set and some understanding of how that data is classified. The goal of supervised learning is to uncover patterns in data and apply them to an analytical process. These data include characteristics associated with labels that define their meaning. You can, for example, create a machine learning application that can distinguish between millions of animals, based on pictures and written descriptions.</p>
-<h4 id="unsupervised-learning">Unsupervised learning</h4>
-<p><img src="https://bigdata-madesimple.com/wp-content/uploads/2018/02/Machine-Learning-Explained2.png" alt="unsupervised learning">
-Unsupervised learning is used when the problem requires a massive amount of unlabeled data. For example, social media apps like Twitter, Instagram, and Snapchat all mine very large amounts of untagged data. To understand the meaning of this data, it is necessary to use algorithms that classify the data according to the trends or clusters they detect. Unsupervised learning leads an iterative process, analyzing data without human intervention. It is used with spam detection technology sent by e-mail. Normal emails and spam have too many variables for an analyst to tag spam emails sent in bulk. In contrast, machine learning discriminants, based on clustering and association, are applied to identify unwanted emails.</p>
-<h4 id="reinforcement-learning">Reinforcement learning</h4>
-<p><img src="https://bigdata-madesimple.com/wp-content/uploads/2018/02/Machine-Learning-Explained3.png" alt="reinforcement learning">
-Reinforcement learning is a model of behavioral learning. The algorithm receives feedback from the data analysis and guides the user to the best result. Reinforcement learning differs from other types of supervised learning in that the system is not trained with a sample data set. Instead, the system learns instead through a trial and error method. Therefore, a sequence of successful decisions results in the strengthening of the process, because it is the process that most effectively solves the problem at hand.</p>
-<h4 id="neural-networks-and-deep-learning">Neural networks and deep learning</h4>
-<center><img src="https://miro.medium.com/max/453/1*51D0MqtqHu3h2vTE5oJ-7g.png"></center>  
-Deep learning is a specific method of machine learning that integrates neural networks in successive layers in order to learn data iteratively. Deep learning is especially useful when trying to spot trends from unstructured data. Complex deep learning neural networks are designed to emulate how the human brain works, so computers can be trained to deal with ill-defined abstractions and problems. Most five-year-olds easily distinguish the face of their teacher from that of the officer responsible for taking them across the crosswalk. On the other hand, the computer must do a considerable amount of work to identify each face. Neural networks and deep learning are often used in image recognition, oral communication and digital vision applications.
-<h3 id="machine-learning-vs-statistical-modeling">Machine learning vs Statistical Modeling</h3>
-<p>Statistical modeling and machine learning can be mixed up sometimes. But there is a difference between these two concepts. <strong>Machine Learning</strong> is an algorithm that can learn from data without being explicitly programmed or relying on standard programming practices. Here are some important facts about machine learning :</p>
+<h2 id="lumina-sonumque-lumina-quas-populos-bienoris-iuppiter">Lumina sonumque lumina quas populos Bienoris Iuppiter</h2>
+<p>Multamque motae te cursus terramque ex utilis memoranda mortale mirum pollice
+saepe quo curvae. Mortis perfundit mandato intonsum est baculumque, exstinctique
+alite erat, in feraxque, <em>ad</em> eram.</p>
 <ul>
-<li>Machine learning is a newer field of study than statistics (machine learning was invented in <strong>1959</strong>, whereas statistics originated in the <strong>17<sup>th</sup> century</strong>)</li>
-<li>Machine learning can result in more detailed information than statisticl modeling</li>
-<li>Machine learning is a subfield of computer science and A.I and contributes to building systems that can learn from data without explicit programming</li>
-<li>Finally, machine learning uses fewer assumptions than statistcal modeling</li>
+<li>Illa traxit</li>
+<li>Pro pectora rapiunt ardor</li>
+<li>Ademit sic arva hausimus</li>
 </ul>
-<p><img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/06/machine-learning.png" alt="ml vs stats"></p>
-<p>Statistical Modeling is the formalization of relationships between variables in the form of mathematical equations. It is a subfield of math that deals with finding relationships between variables to predict outcomes. It deals with a small amount of data with fewer attributes and, as such, there is a good chance that over-fitting will occur.</p>
-<p>Statistical modeling requires the modeller to understand the relation and implementation
-that a variable has on an equation, in an effort to best &ldquo;estimate&rdquo; the function output to a certain error.</p>
-<p>On the other hand, machine Learning requires minimal human effort, as the workload involved in computing is placed squarely on the machine. Furthermore, Machine Learning has a strong predictive power, as the machine is &ldquo;fit&rdquo; and &ldquo;trained&rdquo; to find patterns in the data.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Machine Learning</th>
-<th>Statistical Modeling</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>Network, Graphs</td>
-<td>Model</td>
-</tr>
-<tr>
-<td></td>
-<td>Weights</td>
-<td>Parameters</td>
-</tr>
-<tr>
-<td></td>
-<td>Learning</td>
-<td>Fitting</td>
-</tr>
-<tr>
-<td></td>
-<td>Supervised Learning</td>
-<td>Regression/Classification</td>
-</tr>
-<tr>
-<td></td>
-<td>Unsupervised Learning</td>
-<td>Density Estimation/Clustering</td>
-</tr>
-</tbody>
-</table>
+<h2 id="purpureum-quoque">Purpureum quoque</h2>
+<p>Et super bracchia praetendens inque rubore et dextra, palustribus tuorum dicta
+namque postquam, <a href="http://re.org/mihimedio.html">mole exstimulata gravi</a>
+revocataque. Comas viros glandes? Humum Hic totum: cruores erat credi, tibi est
+aethera summo visa, Attica molli vertatur iuro. Si <strong>comae vertice</strong> innocuae
+promittuntque quem <a href="http://phorcynidosexhalat.net/in">iniceret</a> minacia
+Alcmenae, mittit illam, habet, arbor.</p>
+<p>Et tellus et summa, in qui questus Clytumque placido media siquid fraternis
+expertem et valle <strong>oris</strong> puellae. Et procul germanam vota videor deducit di
+opaca, lato coniuge, bis est Latinum partu coruscant cecidisse. Quoque
+inmansuetumque inultos iuvencae, dicitur citharam Aquilone ex ortygiam tangit
+Saturnia de licebit Danais. Corporibus parat Tisiphone nec flere somnos videre
+parte me inque, <strong>curat</strong> erat stabula, insula.</p>
 
     </div>
     <footer>
@@ -404,7 +383,7 @@ that a variable has on an equation, in an effort to best &ldquo;estimate&rdquo; 
           </h3>
 
           
-          <input type="hidden" name="options[entryId]" value="3534687e8cec14dacbdfb698b28fcc55">
+          <input type="hidden" name="options[entryId]" value="07a2b6da7c47dda6027aebde7f28dffa">
           <input type='hidden' name='fields[replyThread]' value=''>
           <input type='hidden' name='fields[replyID]' value=''>
           <input type='hidden' name='fields[replyName]' value=''>
@@ -441,10 +420,8 @@ that a variable has on an equation, in an effort to best &ldquo;estimate&rdquo; 
   
   <div class="pagination">
     
-      <a href="/blog/supervised-learning-algorithms-r/" class="button left"><span>Supervised Learning algorithms with R</span></a>
     
-    
-      <a href="/blog/blockchain/" class="button right"><span>What is Blockchain Technology?</span></a>
+      <a href="/blog/ml/" class="button right"><span>What is machine learning ?</span></a>
     
   </div>
 
