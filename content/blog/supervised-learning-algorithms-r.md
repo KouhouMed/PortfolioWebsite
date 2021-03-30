@@ -2,7 +2,7 @@
 title = "Supervised Learning algorithms with R"
 description = "We will discover some of the most common supervised learning algorithms and their implementation with R programming language"
 author = "Mohamed Kouhou"
-date = "2020-12-05"
+date = "2021-01-05"
 tags = ["machine learning", "data science"]
 categories = ["machine learning", "data science"]
 [[images]]
@@ -11,60 +11,35 @@ categories = ["machine learning", "data science"]
   stretch = "stretchH"
 +++
 
-# Qui post captus nato sub
+As I mentioned in an earlier <a href="https://kouhoumed.site/blog/ml/" >post</a>, machine learning algorithms are categorized into three main types :
+* Supervised learning algorithms
+* Unsupervised learning algorithms
+* Reinfocement learning algorithms
 
-## Colerent tumebat biceps
+In this article, we will only talk about some of machine learning supervised algorithms. We'll also see examples using R programming language.  
 
-Lorem markdownum Pachyne illa **defensae**, rupit fluit revocare cum veluti.
-Adversum vulnera.
+First of all, I would like to remind you that supervised learning is a machine learning algorithm that tries to find a function mapping an input to a given output based on a set of examples. Basically, each of these examples (called **training set**) consists of the input $X$ and the desired output $Y$. In other words, we try to approximate the function $f$ such that $f(X)=Y$ using previously labelled data as learning examples. The performance of such a model is evaluated upon its ability to generalize onto new data that is unlabeled. 
 
-    socialName(urlDirectSidebar, desktop_c_redundancy(kdePaperUrl,
-            integrated_software_clean, wordartTagFriendly));
-    if (53 + publishingRw - modifier_wheel_flash != add) {
-        fddi_vdu_bit.drm_cache_it += facebook.cyberspaceRealLed(gnutella,
-                dcim_character_bios + rpm, 56 + finderBiometrics);
-        faqDisk += vistaCapsThunderbolt(p_kindle, 1, favorites) - kbps + botnet;
-        storageMinisiteCommand -= fatArrayFavicon;
-    }
-    tooltipAlertExpress = mediaRdramNamespace.cmsDiskEncoding.cdMashup(5,
-            barebonesMiddleware);
+## K-Nearest Neighbours
+K-Nearest Neighbours (KNN) is a simple Machine Learning algorithm based on Supervised Learning technique. It can be used for both regression and classification, but it is mostly used in classification. 
 
-## Vigilat animas tendunt
+Suppose we have two categories : Category $A$ and Category $B$, and we have a new data point $x$ that we want to know to which category it belongs.
+<center><img src="https://miro.medium.com/max/800/1*2zYNhLc522h0zftD1zDh2g.png" style="width: 50%;
+  height: auto"/></center>
 
-Enim humumque, nec membra orbem, piae namque **sperata**. Favorque eversam
-figuris ad modo sub *genua* ferox boves insilit fuerunt medioque vellera
-amplexus Lucifer his vindice. Feram caliginis relicta forent, volubilitas ferro
-adhibere fletus; tamen adicit animi, micante acie sic haud carcere noxae.
-Miserabile luctus haec!
+KNN algorithm is comprised of the following steps :
+- **Step 1 :** Select K, number of neighbours
+- **Step 2 :** Calculate the distance of between $x$ and each of the other data points (we can use the Euclidian distance or others)
+- **Step 3 :** Take the K nearest neighbors as per the calculated Euclidean distance.
+- **Step 4 :** Among these k neighbors, count the number of the data points in each category.
+- **Step 5 :** Assign the new data points to that category for which the number of the neighbor is maximum.
 
-> Cernis nudabant concutio. Quas aurea Phrygibus aethera, per viva temporis vana
-> ore in atque, ut haec est manus. Dictis pelle coeptaeque haesit venit via nec
-> Chiae paterni et tunc. Protinus *passis fumida*, circumtulit minus grata et
-> mihi suos litora anxia, Romanique, cur. Ferit in nunc ego; puellas est operis;
-> repercusso hac omnia Troiae: fecissem ignibus avidis me sumere Pedasus!
 
-## Lumina sonumque lumina quas populos Bienoris Iuppiter
+**NB 1 :** The Euclidian distance between two points $a_1(x_1,y_1)$ and $a_2(x_2,y_2)$ is calculated as follows : $$d(a_1,a_2)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
+<center><img src="https://lh3.googleusercontent.com/proxy/KkYtKow-RsWwJtXyFj89QLfreCXbi00NVtB88MrKEBN4gPcHMv2BrXJvVC6wgprf2J1CNAmATpv9rbIjDQw9P6DbOVg9JKeKnQ" style="width: 50%;
+  height: auto"/></center>
+A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}$$ where $x(x_1,...,x_n)$ and $y(y_1,...,y_n)$.
 
-Multamque motae te cursus terramque ex utilis memoranda mortale mirum pollice
-saepe quo curvae. Mortis perfundit mandato intonsum est baculumque, exstinctique
-alite erat, in feraxque, *ad* eram.
+**NB 2 :** As can be seen, there are no parameters that need to be learned during training to determine whether a new observation belongs to class  𝐴  or  𝐵.  The only parameter used in k-nearest neighbours is K, which is a predetermined value. The algorithm simply works by looking at the training samples, calculating distances and finding the K examples in the training set that are closest to the new observation. Thus, KNN is a **non-parametric**, **supervised** (needs training labels) learning algorithm.
 
-- Illa traxit
-- Pro pectora rapiunt ardor
-- Ademit sic arva hausimus
-
-## Purpureum quoque
-
-Et super bracchia praetendens inque rubore et dextra, palustribus tuorum dicta
-namque postquam, [mole exstimulata gravi](http://re.org/mihimedio.html)
-revocataque. Comas viros glandes? Humum Hic totum: cruores erat credi, tibi est
-aethera summo visa, Attica molli vertatur iuro. Si **comae vertice** innocuae
-promittuntque quem [iniceret](http://phorcynidosexhalat.net/in) minacia
-Alcmenae, mittit illam, habet, arbor.
-
-Et tellus et summa, in qui questus Clytumque placido media siquid fraternis
-expertem et valle **oris** puellae. Et procul germanam vota videor deducit di
-opaca, lato coniuge, bis est Latinum partu coruscant cecidisse. Quoque
-inmansuetumque inultos iuvencae, dicitur citharam Aquilone ex ortygiam tangit
-Saturnia de licebit Danais. Corporibus parat Tisiphone nec flere somnos videre
-parte me inque, **curat** erat stabula, insula.
+**NB 3 :** KNN does  support <a href="https://en.wikipedia.org/wiki/Categorical_variable">categorical variables</a> as features, simply because we cannot calculated the distance from them.

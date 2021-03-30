@@ -6,15 +6,16 @@
     <description>Recent content in Machine Learning on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.site/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.site/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supervised Learning algorithms with R</title>
       <link>https://kouhoumed.site/blog/supervised-learning-algorithms-r/</link>
-      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kouhoumed.site/blog/supervised-learning-algorithms-r/</guid>
-      <description>Qui post captus nato sub Colerent tumebat biceps Lorem markdownum Pachyne illa defensae, rupit fluit revocare cum veluti. Adversum vulnera.
-socialName(urlDirectSidebar, desktop_c_redundancy(kdePaperUrl,integrated_software_clean, wordartTagFriendly));if (53 + publishingRw - modifier_wheel_flash != add) {fddi_vdu_bit.drm_cache_it += facebook.cyberspaceRealLed(gnutella,dcim_character_bios + rpm, 56 + finderBiometrics);faqDisk += vistaCapsThunderbolt(p_kindle, 1, favorites) - kbps + botnet;storageMinisiteCommand -= fatArrayFavicon;}tooltipAlertExpress = mediaRdramNamespace.cmsDiskEncoding.cdMashup(5,barebonesMiddleware); Vigilat animas tendunt Enim humumque, nec membra orbem, piae namque sperata.</description>
+      <description>As I mentioned in an earlier post, machine learning algorithms are categorized into three main types :
+ Supervised learning algorithms Unsupervised learning algorithms Reinfocement learning algorithms  In this article, we will only talk about some of machine learning supervised algorithms. We&amp;rsquo;ll also see examples using R programming language.
+First of all, I would like to remind you that supervised learning is a machine learning algorithm that tries to find a function mapping an input to a given output based on a set of examples.</description>
     </item>
     
     <item>
