@@ -22,7 +22,7 @@
 <meta itemprop="description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language">
 <meta itemprop="datePublished" content="2021-01-05T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="429">
+<meta itemprop="wordCount" content="934">
 <meta itemprop="image" content="">
 
 
@@ -237,7 +237,7 @@
   <div class="meta">
     <time datetime="2021-01-05 00:00:00 &#43;0000 UTC">January 5, 2021</time>
     <p>Mohamed Kouhou</p>
-    <p>3-Minute Read</p>
+    <p>5-Minute Read</p>
   </div>
 </header>
 
@@ -315,8 +315,69 @@
 <center><img src="https://lh3.googleusercontent.com/proxy/KkYtKow-RsWwJtXyFj89QLfreCXbi00NVtB88MrKEBN4gPcHMv2BrXJvVC6wgprf2J1CNAmATpv9rbIjDQw9P6DbOVg9JKeKnQ" style="width: 50%;
   height: auto"/></center>
 A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}$$ where $x(x_1,...,x_n)$ and $y(y_1,...,y_n)$.
-<p><strong>NB 2 :</strong> As can be seen, there are no parameters that need to be learned during training to determine whether a new observation belongs to class  𝐴  or  𝐵.  The only parameter used in k-nearest neighbours is K, which is a predetermined value. The algorithm simply works by looking at the training samples, calculating distances and finding the K examples in the training set that are closest to the new observation. Thus, KNN is a <strong>non-parametric</strong>, <strong>supervised</strong> (needs training labels) learning algorithm.</p>
+<p><strong>NB 2 :</strong> As can be seen, there are no parameters that need to be learned during training to determine whether a new observation belongs to class  𝐴  or  𝐵.  The only parameter used in K-Nearest Neighbours is K, which is a predetermined value. The algorithm simply works by looking at the training samples, calculating distances and finding the K examples in the training set that are closest to the new observation. Thus, KNN is a <strong>non-parametric</strong>, <strong>supervised</strong> (needs training labels) learning algorithm.</p>
 <p><strong>NB 3 :</strong> KNN does  support <a href="https://en.wikipedia.org/wiki/Categorical_variable">categorical variables</a> as features, simply because we cannot calculated the distance from them.</p>
+<p>The hands-on example that we will work on will use the <code>Sonar</code> data set (signals) from <code>mlbench</code> library. <code>Sonar</code> is a system for the detection of objects under water and for measuring the water&rsquo;s depth by emitting and detecting sound pulses (the complete description can be found →<a href="https://cran.r-project.org/web/packages/mlbench/mlbench.pdf">here</a>). For our purposes, this is a two-class (class $R$ and class $M$) classification task with numeric data.</p>
+<p>First of all, let&rsquo;s install the required libraries :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># install the packages (note: this may take some time)</span>
+<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;class&#34;</span>)
+<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;caret&#34;</span>)
+<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;mlbench&#34;</span>)
+<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;e1071&#34;</span>)
+
+<span style="color:#a6e22e">library</span>(class)
+<span style="color:#a6e22e">library</span>(caret)
+<span style="color:#a6e22e">require</span>(mlbench)
+<span style="color:#a6e22e">library</span>(e1071)
+<span style="color:#a6e22e">library</span>(base)
+<span style="color:#a6e22e">require</span>(base)
+</code></pre></div><h4 id="step-1--loading-the-data">Step 1 : Loading the data</h4>
+<p>Let&rsquo;s load the <code>Sonar</code> dataset and look at the first five rows :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">data</span>(Sonar)
+<span style="color:#a6e22e">head</span>(Sonar)
+</code></pre></div><h4 id="step-2--preparing-and-exploring-the-data">Step 2 : Preparing and exploring the data</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">nrow</span>(Sonar)
+<span style="color:#a6e22e">ncol</span>(Sonar)
+</code></pre></div><p>This will display the number of lines (<em><strong>208 observations</strong></em>) and the number of columns (<em><strong>61 variables</strong></em>), all numerical except for the Class variable which is categorical.</p>
+<p>Let&rsquo;s check how many $R$ classes and $M$ classes <code>Sonar</code> contains :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(Sonar<span style="color:#f92672">$</span>Class)
+</code></pre></div><p>Now let&rsquo;s see if it contains any <code>NA</code> values in its columns :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">apply</span>(Sonar, <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">is.na</span>(x))) 
+</code></pre></div><p>We are going to manually split <code>Sonar</code> into training and test sets. Here, we will dedicate 70% of the dataset for traing, and the rest for testing :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">SEED <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">123</span>
+<span style="color:#a6e22e">set.seed</span>(SEED)
+data <span style="color:#f92672">&lt;-</span> Sonar[base<span style="color:#f92672">::</span><span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">nrow</span>(Sonar)), ] <span style="color:#75715e"># shuffle data first</span>
+bound <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(<span style="color:#ae81ff">0.7</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">nrow</span>(data))
+df_train <span style="color:#f92672">&lt;-</span> data[1<span style="color:#f92672">:</span>bound, ] 
+df_test <span style="color:#f92672">&lt;-</span> data<span style="color:#a6e22e">[</span>(bound <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(data), ]
+<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Number of training and test samples are &#34;</span>, <span style="color:#a6e22e">nrow</span>(df_train), <span style="color:#a6e22e">nrow</span>(df_test))
+</code></pre></div><p>Now, let&rsquo;s create the following dataframes :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">X_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">subset</span>(df_train, select<span style="color:#f92672">=-</span>Class)
+y_train <span style="color:#f92672">&lt;-</span> df_train<span style="color:#f92672">$</span>Class
+X_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">subset</span>(df_test, select<span style="color:#f92672">=-</span>Class) <span style="color:#75715e"># exclude Class for prediction</span>
+y_test <span style="color:#f92672">&lt;-</span> df_test<span style="color:#f92672">$</span>Class
+</code></pre></div><h4 id="tep-3--training-a-model-on-data">tep 3 : Training a model on data</h4>
+<p>Now, we are going to use <code>knn</code> function from <code>class</code> library with  $K=3$ :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">knn_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">knn</span>(train<span style="color:#f92672">=</span>X_train,
+                 test<span style="color:#f92672">=</span>X_test,
+                 cl<span style="color:#f92672">=</span>y_train,  <span style="color:#75715e"># class labels</span>
+                 k<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+knn_model
+</code></pre></div><p>If you run the code above, you&rsquo;ll see the prediction made by <code>knn_model</code> with $K=3$ on <code>X_test</code>.</p>
+<h4 id="step-4--evaluate-the-model-performance">Step 4 : Evaluate the model performance</h4>
+<p>In order to see how many classes have been correctly or incorrectly classified, we can create a <strong><a href="https://en.wikipedia.org/wiki/Confusion_matrix">confusion matrix</a></strong> as follows :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">conf_mat <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(y_test, knn_model)
+conf_mat
+</code></pre></div><p>To compute the <strong><a href="https://en.wikipedia.org/wiki/Accuracy_and_precision">accuracy</a></strong>, we sum up all the correctly classified observations (located in diagonal) and divide it by the total number of classes :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Accuracy: &#34;</span>, <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(conf_mat))<span style="color:#f92672">/</span><span style="color:#a6e22e">sum</span>(conf_mat))
+</code></pre></div><p>To assess whether $K=3$ is a good choice and see whether $K=3$ leads to <a href="https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/">overfitting/underfitting</a> the data, we could use <code>knn.cv</code> which does the <strong>leave-one-out cross-validations</strong> for training set (i.e., it singles out a training sample one at a time and tries to view it as a new example and see what class label it assigns).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">knn_loocv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">knn.cv</span>(train<span style="color:#f92672">=</span>X_train, cl<span style="color:#f92672">=</span>y_train, k<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+knn_loocv
+</code></pre></div><p>Let&rsquo;s create a confusion matrix to compute the accuracy of the training labels <code>y_train</code> and the cross-validated predictions <code>knn_loocv</code>, same as the above :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">conf_mat_cv <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(y_train, knn_loocv)
+conf_mat_cv
+<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;LOOCV accuracy: &#34;</span>, <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(conf_mat_cv)) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(conf_mat_cv))
+</code></pre></div><p>The difference between the cross-validated accuracy and the test accuracy shows that $K=3$ leads to overfitting. Perhaps we should change $K$ to lessen the overfitting.</p>
 
     </div>
     <footer>

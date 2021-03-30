@@ -40,6 +40,101 @@ KNN algorithm is comprised of the following steps :
   height: auto"/></center>
 A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}$$ where $x(x_1,...,x_n)$ and $y(y_1,...,y_n)$.
 
-**NB 2 :** As can be seen, there are no parameters that need to be learned during training to determine whether a new observation belongs to class  𝐴  or  𝐵.  The only parameter used in k-nearest neighbours is K, which is a predetermined value. The algorithm simply works by looking at the training samples, calculating distances and finding the K examples in the training set that are closest to the new observation. Thus, KNN is a **non-parametric**, **supervised** (needs training labels) learning algorithm.
+**NB 2 :** As can be seen, there are no parameters that need to be learned during training to determine whether a new observation belongs to class  𝐴  or  𝐵.  The only parameter used in K-Nearest Neighbours is K, which is a predetermined value. The algorithm simply works by looking at the training samples, calculating distances and finding the K examples in the training set that are closest to the new observation. Thus, KNN is a **non-parametric**, **supervised** (needs training labels) learning algorithm.
 
 **NB 3 :** KNN does  support <a href="https://en.wikipedia.org/wiki/Categorical_variable">categorical variables</a> as features, simply because we cannot calculated the distance from them.
+
+The hands-on example that we will work on will use the `Sonar` data set (signals) from `mlbench` library. `Sonar` is a system for the detection of objects under water and for measuring the water's depth by emitting and detecting sound pulses (the complete description can be found →<a href="https://cran.r-project.org/web/packages/mlbench/mlbench.pdf">here</a>). For our purposes, this is a two-class (class $R$ and class $M$) classification task with numeric data.
+
+First of all, let's install the required libraries :
+```r
+# install the packages (note: this may take some time)
+install.packages("class")
+install.packages("caret")
+install.packages("mlbench")
+install.packages("e1071")
+
+library(class)
+library(caret)
+require(mlbench)
+library(e1071)
+library(base)
+require(base)
+```
+
+#### Step 1 : Loading the data
+Let's load the `Sonar` dataset and look at the first five rows :
+
+```r
+data(Sonar)
+head(Sonar)
+```
+#### Step 2 : Preparing and exploring the data
+```r
+nrow(Sonar)
+ncol(Sonar)
+```
+This will display the number of lines (***208 observations***) and the number of columns (***61 variables***), all numerical except for the Class variable which is categorical.
+
+Let's check how many $R$ classes and $M$ classes `Sonar` contains :
+```r
+base::table(Sonar$Class)
+```
+ Now let's see if it contains any `NA` values in its columns :
+
+```r
+apply(Sonar, 2, function(x) sum(is.na(x))) 
+```
+
+We are going to manually split `Sonar` into training and test sets. Here, we will dedicate 70% of the dataset for traing, and the rest for testing :
+```r
+SEED <- 123
+set.seed(SEED)
+data <- Sonar[base::sample(nrow(Sonar)), ] # shuffle data first
+bound <- floor(0.7 * nrow(data))
+df_train <- data[1:bound, ] 
+df_test <- data[(bound + 1):nrow(data), ]
+cat("Number of training and test samples are ", nrow(df_train), nrow(df_test))
+```
+Now, let's create the following dataframes :
+```r
+X_train <- subset(df_train, select=-Class)
+y_train <- df_train$Class
+X_test <- subset(df_test, select=-Class) # exclude Class for prediction
+y_test <- df_test$Class
+```
+
+#### tep 3 : Training a model on data
+
+Now, we are going to use `knn` function from `class` library with  $K=3$ :
+```r
+knn_model <- knn(train=X_train,
+                 test=X_test,
+                 cl=y_train,  # class labels
+                 k=3)
+knn_model
+```
+If you run the code above, you'll see the prediction made by `knn_model` with $K=3$ on `X_test`.
+#### Step 4 : Evaluate the model performance
+In order to see how many classes have been correctly or incorrectly classified, we can create a **<a href="https://en.wikipedia.org/wiki/Confusion_matrix">confusion matrix</a>** as follows :
+```r
+conf_mat <- base::table(y_test, knn_model)
+conf_mat
+```
+To compute the **<a href="https://en.wikipedia.org/wiki/Accuracy_and_precision">accuracy</a>**, we sum up all the correctly classified observations (located in diagonal) and divide it by the total number of classes :
+```r
+cat("Accuracy: ", sum(diag(conf_mat))/sum(conf_mat))
+```
+To assess whether $K=3$ is a good choice and see whether $K=3$ leads to <a href="https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/">overfitting/underfitting</a> the data, we could use `knn.cv` which does the **leave-one-out cross-validations** for training set (i.e., it singles out a training sample one at a time and tries to view it as a new example and see what class label it assigns).
+```r
+knn_loocv <- knn.cv(train=X_train, cl=y_train, k=3)
+knn_loocv
+```
+Let's create a confusion matrix to compute the accuracy of the training labels `y_train` and the cross-validated predictions `knn_loocv`, same as the above :
+```r
+conf_mat_cv <- base::table(y_train, knn_loocv)
+conf_mat_cv
+cat("LOOCV accuracy: ", sum(diag(conf_mat_cv)) / sum(conf_mat_cv))
+```
+The difference between the cross-validated accuracy and the test accuracy shows that $K=3$ leads to overfitting. Perhaps we should change $K$ to lessen the overfitting.
+
