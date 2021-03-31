@@ -49,6 +49,39 @@ I am glad that I had the chance to take many online courses in different domains
 [Advanced Google Analytics](/files/Advanced_Google_Analytics.pdf)   |  April 2020  | Google
 [Google Analytics For Beginners](/files/Google_Analytics_For_Beginners.pdf)   |  Mars 2020  | Google
 
+
+<div class="outer-grid">
+   <div class="inner-grid">
+      <img src="https://images.youracclaim.com/size/340x340/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/dfd6eb51-4caa-4ffe-b107-85ece064370c/Data_Science_Methodologies.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/087eaefb-61a2-426b-ae74-74efca195667/Data_Visualization_Using_Python.png"/>
+   </div>
+   <div class="inner-grid">
+      <img src="https://images.youracclaim.com/size/340x340/images/f2f9716d-7be0-47ef-b4ad-c8d3b481b9d7/Data_Sci_Business_Level_1_-_CC_-_2019.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/49211314-919e-4207-885a-7d2ff76ddb07/Statistics_101_-_CC.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/d2cc88b1-1f59-41d2-9f1c-83190e3541e1/R_Essentials.png"/>
+   </div>
+   <div class="inner-grid">
+      <img src="https://images.youracclaim.com/size/340x340/images/c2ddc533-ba6c-464d-a69d-f9f28177176b/CertiProf-Badge-SFPC.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/84ac9eff-b8a2-4683-846b-f59887a73801/Python_101_Data_Science.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/fb8597e1-9283-459d-8770-b2679e42a700/Data_Visualization_with_R.png"/>
+   </div>
+   <div class="inner-grid">
+      <img src="https://images.youracclaim.com/size/340x340/images/f5cf37e4-6ebd-4067-96a9-b26d04f51ff7/CertiProf-Badge-LLL.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/ba34cb1c-4344-43f5-9685-55e2e901c0f0/Data_Analysis_using_Python.png"/>
+      <img src="https://images.youracclaim.com/size/340x340/images/5ca7b236-6105-4154-ba22-c8ae12ec1d8c/Data_Sci_Found_Level_1_-_CC_-_2019.png"/>
+   </div>
+   <div class="inner-grid">
+      <img src="https://images.youracclaim.com/size/340x340/images/de9471ce-018c-4bf4-af49-5c9c1d488613/Data_Science_Tools.png"/>
+   </div>
+   <div class="inner-grid">
+      <img src="https://images.youracclaim.com/size/340x340/images/53caf8cc-b5e9-4424-b4a7-7b069fa13db4/Machine_Learning_with_Python.png"/>
+   </div>
+</div>
+
+
+
+
 ### Extracurricular & Volunteering Experiences
 
 As an active member of [CIT Club](m.facebook.com/CIT.INPT/), I've proudly been part of the organization staff of its two main events ([JNJD](https://www.facebook.com/JNJD.CIT/) and [IDEH](https://www.linkedin.com/events/6605234090222460928/)) last year. And this year, I have been elected Treasurer of the club.  
@@ -68,3 +101,41 @@ I'm so passionate about photography 📸 , music 🎶, and reading 📚
 
 Thanks for passing by! 😄  
 Please feel free to <a href='mailto:mohamedkouhou@gmail.com' style='color : rgb(65, 193, 225);'>contact me</a>.
+
+
+
+<style>
+* {
+   box-sizing: border-box;
+}
+h1 {
+   text-align: center;
+}
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+}
+.inner-grid {
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+}
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 100%;
+   }
+}
+</style>
