@@ -22,7 +22,7 @@
 <meta itemprop="description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language">
 <meta itemprop="datePublished" content="2021-01-05T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="934">
+<meta itemprop="wordCount" content="1184">
 <meta itemprop="image" content="">
 
 
@@ -237,7 +237,7 @@
   <div class="meta">
     <time datetime="2021-01-05 00:00:00 &#43;0000 UTC">January 5, 2021</time>
     <p>Mohamed Kouhou</p>
-    <p>5-Minute Read</p>
+    <p>6-Minute Read</p>
   </div>
 </header>
 
@@ -312,7 +312,7 @@
 <li><strong>Step 5 :</strong> Assign the new data points to that category for which the number of the neighbor is maximum.</li>
 </ul>
 <p><strong>NB 1 :</strong> The Euclidian distance between two points $a_1(x_1,y_1)$ and $a_2(x_2,y_2)$ is calculated as follows : $$d(a_1,a_2)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$</p>
-<center><img src="https://lh3.googleusercontent.com/proxy/KkYtKow-RsWwJtXyFj89QLfreCXbi00NVtB88MrKEBN4gPcHMv2BrXJvVC6wgprf2J1CNAmATpv9rbIjDQw9P6DbOVg9JKeKnQ" style="width: 50%;
+<center><img src="https://i.ibb.co/DrGLq7q/unnamed.png" style="width: 50%;
   height: auto"/></center>
 A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}$$ where $x(x_1,...,x_n)$ and $y(y_1,...,y_n)$.
 <p><strong>NB 2 :</strong> As can be seen, there are no parameters that need to be learned during training to determine whether a new observation belongs to class  𝐴  or  𝐵.  The only parameter used in K-Nearest Neighbours is K, which is a predetermined value. The algorithm simply works by looking at the training samples, calculating distances and finding the K examples in the training set that are closest to the new observation. Thus, KNN is a <strong>non-parametric</strong>, <strong>supervised</strong> (needs training labels) learning algorithm.</p>
@@ -378,6 +378,34 @@ knn_loocv
 conf_mat_cv
 <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;LOOCV accuracy: &#34;</span>, <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(conf_mat_cv)) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(conf_mat_cv))
 </code></pre></div><p>The difference between the cross-validated accuracy and the test accuracy shows that $K=3$ leads to overfitting. Perhaps we should change $K$ to lessen the overfitting.</p>
+<h4 id="step-5--improve-the-performance-of-the-model">Step 5 : Improve the performance of the model</h4>
+<p>There are a couple things we can do in order to improve the performance of our model :</p>
+<ul>
+<li><strong>Centering and scaling data</strong> : these are forms of preprocessing numerical data (not suitable for categorical data). Centering a variable means subtracting the mean of the variable from each data point so that the new variable&rsquo;s mean is 0. And scaling consists of multiplying each data point by a constant in order to alter the range of the data.</li>
+<li><strong>Performing a <em>cross-vaidation</em></strong> : this consists of dividing the data into a finite number of subsets. Through each iteration, a subset is set aside, and the remaining subsets are used as the training set. The subset that was set aside is used as the test set (prediction).</li>
+</ul>
+<p>This is a method of cross-referencing the model built using its own data :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">SEED <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2016</span>
+<span style="color:#a6e22e">set.seed</span>(SEED)
+<span style="color:#75715e"># create the training data 70% of the overall Sonar data.</span>
+in_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">createDataPartition</span>(Sonar<span style="color:#f92672">$</span>Class, p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, list<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># create training indices</span>
+ndf_train <span style="color:#f92672">&lt;-</span> Sonar[in_train, ]
+ndf_test <span style="color:#f92672">&lt;-</span> Sonar[<span style="color:#f92672">-</span>in_train, ]
+</code></pre></div><p>Here, we specify the cross-validation method we want to use to find the best $K$ in grid search.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># lets create a function setup to do 5-fold cross-validation with 2 repeat.</span>
+ctrl <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">trainControl</span>(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;repeatedcv&#34;</span>, number<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, repeats<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+
+nn_grid <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">expand.grid</span>(k<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>))
+nn_grid
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">set.seed</span>(SEED)
+
+best_knn <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">train</span>(Class<span style="color:#f92672">~</span>., data<span style="color:#f92672">=</span>ndf_train,
+                  method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;knn&#34;</span>,
+                  trControl<span style="color:#f92672">=</span>ctrl, 
+                  preProcess <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;center&#34;</span>, <span style="color:#e6db74">&#34;scale&#34;</span>),  <span style="color:#75715e"># standardize</span>
+                  tuneGrid<span style="color:#f92672">=</span>nn_grid)
+best_knn
+</code></pre></div><p>Running the code above, you&rsquo;ll find out that $K=1$ has the highest accuracy from repeated cross-validation.</p>
 
     </div>
     <footer>

@@ -36,7 +36,7 @@ KNN algorithm is comprised of the following steps :
 
 
 **NB 1 :** The Euclidian distance between two points $a_1(x_1,y_1)$ and $a_2(x_2,y_2)$ is calculated as follows : $$d(a_1,a_2)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$$
-<center><img src="https://lh3.googleusercontent.com/proxy/KkYtKow-RsWwJtXyFj89QLfreCXbi00NVtB88MrKEBN4gPcHMv2BrXJvVC6wgprf2J1CNAmATpv9rbIjDQw9P6DbOVg9JKeKnQ" style="width: 50%;
+<center><img src="https://i.ibb.co/DrGLq7q/unnamed.png" style="width: 50%;
   height: auto"/></center>
 A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}$$ where $x(x_1,...,x_n)$ and $y(y_1,...,y_n)$.
 
@@ -138,3 +138,41 @@ cat("LOOCV accuracy: ", sum(diag(conf_mat_cv)) / sum(conf_mat_cv))
 ```
 The difference between the cross-validated accuracy and the test accuracy shows that $K=3$ leads to overfitting. Perhaps we should change $K$ to lessen the overfitting.
 
+#### Step 5 : Improve the performance of the model
+
+There are a couple things we can do in order to improve the performance of our model :
+* **Centering and scaling data** : these are forms of preprocessing numerical data (not suitable for categorical data). Centering a variable means subtracting the mean of the variable from each data point so that the new variable's mean is 0. And scaling consists of multiplying each data point by a constant in order to alter the range of the data.
+* **Performing a *cross-vaidation*** : this consists of dividing the data into a finite number of subsets. Through each iteration, a subset is set aside, and the remaining subsets are used as the training set. The subset that was set aside is used as the test set (prediction).
+
+This is a method of cross-referencing the model built using its own data :
+
+```r
+SEED <- 2016
+set.seed(SEED)
+# create the training data 70% of the overall Sonar data.
+in_train <- createDataPartition(Sonar$Class, p=0.7, list=FALSE) # create training indices
+ndf_train <- Sonar[in_train, ]
+ndf_test <- Sonar[-in_train, ]
+```
+
+Here, we specify the cross-validation method we want to use to find the best $K$ in grid search.
+
+```r
+# lets create a function setup to do 5-fold cross-validation with 2 repeat.
+ctrl <- trainControl(method="repeatedcv", number=5, repeats=2)
+
+nn_grid <- expand.grid(k=c(1,3,5,7))
+nn_grid
+```
+
+```r
+set.seed(SEED)
+
+best_knn <- train(Class~., data=ndf_train,
+                  method="knn",
+                  trControl=ctrl, 
+                  preProcess = c("center", "scale"),  # standardize
+                  tuneGrid=nn_grid)
+best_knn
+```
+Running the code above, you'll find out that $K=1$ has the highest accuracy from repeated cross-validation.
