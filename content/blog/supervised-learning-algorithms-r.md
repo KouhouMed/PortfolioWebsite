@@ -1,5 +1,5 @@
 +++
-title = "Supervised Learning algorithms with R"
+title = "Supervised Learning algorithms with R (part 1)"
 description = "We will discover some of the most common supervised learning algorithms and their implementation with R programming language"
 author = "Mohamed Kouhou"
 date = "2021-01-05"
@@ -44,7 +44,7 @@ A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^
 
 **NB 3 :** KNN does  support <a href="https://en.wikipedia.org/wiki/Categorical_variable">categorical variables</a> as features, simply because we cannot calculated the distance from them.
 
-The hands-on example that we will work on will use the `Sonar` data set (signals) from `mlbench` library. `Sonar` is a system for the detection of objects under water and for measuring the water's depth by emitting and detecting sound pulses (the complete description can be found →<a href="https://cran.r-project.org/web/packages/mlbench/mlbench.pdf">here</a>). For our purposes, this is a two-class (class $R$ and class $M$) classification task with numeric data.
+The hands-on example[^1] that we will work on will use the `Sonar` data set (signals) from `mlbench` library. `Sonar` is a system for the detection of objects under water and for measuring the water's depth by emitting and detecting sound pulses (the complete description can be found →<a href="https://cran.r-project.org/web/packages/mlbench/mlbench.pdf">here</a>). For our purposes, this is a two-class (class $R$ and class $M$) classification task with numeric data.
 
 First of all, let's install the required libraries :
 ```r
@@ -178,3 +178,159 @@ best_knn
 Running the code above, you'll find out that $K=1$ has the highest accuracy from repeated cross-validation.
 
 ## Decision Trees
+
+**Decision Trees** are one of the most powerful predictive classification models. They are based on the analysis of a set of data points that describe the type of object we want to classify. A Decision tree is a flowchart like tree structure, where each **internal node** denotes a test on an attribute, each **branch** represents an outcome of the test, and each **leaf node** (terminal node) holds a class label.
+
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Champignons_mushrooms_%28950475736%29.jpg" style="width: 50%;
+  height: auto"/></center>
+
+In our practical example[^2], we'll try to classify a set of mushrooms as either *edible* or *poisonous* based on features like its cap type, color, odor, shape of its stalk, etc.
+
+<center>
+  <figure>
+    <img src="https://ibm.box.com/shared/static/ar8rlcoyrs0n0kphj4g4n4rbhe76vpd9.png" style="width: 80%;
+  height: auto"/>
+    <figcaption>Example of mushroom features and their classification</figcaption>
+  </figure>
+</center>
+
+The algorithm behind Decision trees uses probabilities. For example, if many mushrooms that have large caps are poisonous, the algorithm will assume that the probability of large-cap mushrooms being poisonous is high. When the model is complete, we have a tree-like structure composed of what are called **decision nodes**, which ask our data point questions about its features, and **leaf nodes**, which tells us what classification the decision tree thinks our data point is.
+
+<center>
+  <figure>
+    <img src="https://ibm.box.com/shared/static/urnm2onpitt8qz2296mltzcfdn1p040f.png" style="width: 80%;
+  height: auto"/>
+    <figcaption>Example of a possible Decision Tree describing mushrooms</figaption>
+  </figure>
+</center>
+
+The goal of a decision tree is to split the dataset on based on attributes. But how to find the best feature in each node to split?
+
+To answer this question, let's first define the **Entropy**.
+
+**Entropy** is the amount of information disorder, or the amount of randomness in the data. It is calculated for each node and it depends on how much random data that node contains. In decision tree we are looking for a trees that have smallest entropy in their nodes. The entropy is used to calculate the homogeneity of the samples in that node. If the samples are completely homogeneous the entropy is zero and if the sample is an equally divided it has entropy of one. It means, if all data in a node are either poisonous or edible, then the entropy is zero, but if the half of data are poisonous and other half are edible, then the entropuy is one. In our example, we can calculate the Entropy of our target class using the following formula :
+
+$$Entropy = - p(edible)log(p(edible)) - p(poisonous)log(p(poisonous))$$
+
+Decision trees use another metric on which decisions are based : **Information gain**. We can think of it as the opposite of entropy. The more randomness decreases, the more information we gain, and vice-versa. Thus, while building a  decision tree, we choose the attributes with the highest information gain.
+$$\text{Information Gain = entropy(parent) – [average entropy(children)]}$$
+
+**Algorithm :**
+
+      1. Calculate entropy of the target field (the class label) for whole dataset.
+      2. For each attribute:
+        - split the dataset on the attribute
+        - calculate entropy of the target field on splited dataset, using the attribute values
+        - calculate the information gain of the attribute
+      3. select the attribute that has the largest informmation gain
+      4. Branch the tree using the selected attribute
+      5. stop, if it is a node with entropy of 0, otherwise jump to step2
+
+
+#### Decision tree with R
+
+We will start by loading the data. We'll use <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/">UCI's</a> `Mushroom` dataset. Since this dataset is not inbuilt into R, we need to download it and load it into R :
+```r
+download.file("https://ibm.box.com/shared/static/dpdh09s70abyiwxguehqvcq3dn0m7wve.data", "mushroom.data")
+```
+After downloading the file, we need to create a data frame to house the observations in the dataset. Since the dataset is structured using comma-separated values, we can use the `read.csv` function :
+```r
+mushrooms <- read.csv("mushroom.data", header = F)
+mushrooms
+```
+Once that's done, we have the data loaded up. However, the way that it is structured isn't the most intuitive. In the code cell below, we are adding the column names to the data frame with the `colnames` function. Additionally, since our data frame is composed of factors, we can rename some of these factors to something more easily understood by us using `levels`.
+```r
+# Define column names for the mushrooms data frame.
+colnames(mushrooms) <- c("Class","cap.shape","cap.surface","cap.color","bruises","odor","gill.attachment","gill.spacing",
+                         "gill.size","gill.color","stalk.shape","stalk.root","stalk.surface.above.ring",
+                         "stalk.surface.below.ring","stalk.color.above.ring","stalk.color.below.ring","veil.type","veil.color",
+                         "ring.number","ring.type","print","population","habitat")
+head(mushrooms)
+```
+
+```r
+# Define the factor names for "Class"
+levels(mushrooms$Class) <- c("Edible","Poisonous")
+```
+```r
+# Define the factor names for "odor"
+levels(mushrooms$odor) <- c("Almonds","Anise","Creosote","Fishy","Foul","Musty","None","Pungent","Spicy")
+# Define the factor names for "print"
+levels(mushrooms$print) <- c("Black","Brown","Buff","Chocolate","Green","Orange","Purple","White","Yellow")
+head(mushrooms)
+```
+
+Now let's build our model. We are going to use `rpart` library to create the decision tree, and `rpart.plot` to visualize it.
+But first, install `rpart.plot` if it's not already installed.
+```r
+install.packages("rpart")
+install.packages("rpart.plot")
+```
+```r
+# Import our required libraries
+library(rpart)
+library(rpart.plot)
+```
+
+To create our decision tree model, we can use the `rpart` function. `rpart` is simple to use: you provide it a `formula`, show it the dataset it is supposed to use and choose a method (either "class" for classification or "anova" for regression).
+
+A great trick to know when handling very large structured datasets (our dataset has over 20 columns we want to use!) is that in `formula` declarations, one can use the `.` operator as a quick way of designating "all other columns" to R. You can also `print` the Decision Tree model to retrieve a summary describing it.
+
+```r
+# Create a classification decision tree using "Class" as the variable we want to predict and everything else as its predictors.
+myDecisionTree <- rpart(Class ~ ., data = mushrooms, method = "class")
+# Print out a summary of our created model.
+print(myDecisionTree)
+```
+Now that we have our model, we can draw it to gain a better understanding of how it is classifying the data points. We can use the `rpart.plot`function -- a specialized function for plotting trees -- to render our model. This function takes on some parameters for visualizing the tree in different ways -- try changing the type (from 1 to 4) parameter to see what happens!
+
+If you run the code above, you'll see that our decision tree has perfect accuracy when classifying poisonous mushrooms, and almost perfect accuracy when dealing with edible ones.
+
+```r
+newCase  <- mushrooms[10,-1]
+newCase
+```
+```r
+predict(myDecisionTree, newCase, type = "class")
+```
+
+**Model accuracy :**
+
+Let's split our dataset into traing set and test set :
+```r
+## 75% of the sample size
+n <- nrow(mushrooms)
+smp_size <- floor(0.75 * n)
+
+## set the seed to make your partition reproductible
+set.seed(123)
+train_ind <- base::sample(c(1:n), size = smp_size)
+
+mushrooms_train <- mushrooms[train_ind, ]
+mushrooms_test <- mushrooms[-train_ind, ]
+```
+
+```r
+newDT <- rpart(Class ~ ., data = mushrooms_train, method = "class")
+```
+
+```r
+result <- predict(newDT, mushrooms_test[,-1], type = "class")
+```
+
+```r
+head(result)
+```
+
+```r
+head(mushrooms_test$Class)
+```
+
+```r
+base::table(mushrooms_test$Class, result)
+```
+
+
+
+[^1]: Credit: <a href="https://www.linkedin.com/in/ehsanmkermani">Ehsan M. Kermani</a>
+[^2]: Credit: <a href="https://www.linkedin.com/in/saeedaghabozorgi/?originalSubdomain=ca">Saeed Aghabozorgi</a>, <a href="https://www.linkedin.com/in/walter-gomes/">Walter Gomes de Amorim Junior</a>

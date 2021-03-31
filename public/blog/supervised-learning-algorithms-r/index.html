@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>Supervised Learning algorithms with R - Mohamed Kouhou&#39;s personal website</title>
+<title>Supervised Learning algorithms with R (part 1) - Mohamed Kouhou&#39;s personal website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -18,17 +18,17 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.76.5" /><meta itemprop="name" content="Supervised Learning algorithms with R">
+<meta name="generator" content="Hugo 0.76.5" /><meta itemprop="name" content="Supervised Learning algorithms with R (part 1)">
 <meta itemprop="description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language">
 <meta itemprop="datePublished" content="2021-01-05T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1194">
+<meta itemprop="wordCount" content="2263">
 <meta itemprop="image" content="">
 
 
 
 <meta itemprop="keywords" content="machine learning,data science," />
-<meta property="og:title" content="Supervised Learning algorithms with R" />
+<meta property="og:title" content="Supervised Learning algorithms with R (part 1)" />
 <meta property="og:description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kouhoumed.site/blog/supervised-learning-algorithms-r/" />
@@ -38,7 +38,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content=""/>
 
-<meta name="twitter:title" content="Supervised Learning algorithms with R"/>
+<meta name="twitter:title" content="Supervised Learning algorithms with R (part 1)"/>
 <meta name="twitter:description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language"/>
 <meta name="twitter:site" content="@MohamedKouhou"/>
 <link rel="stylesheet" href="/css/bundle.min.d9e04ae08c9b3049b766dbd4aeab7d862c5ea1d13679b621490e0f5df5507497.css" integrity="sha256-2eBK4IybMEm3ZtvUrqt9hixeodE2ebYhSQ4PXfVQdJc="><link rel="stylesheet" href="/css/add-on.css">
@@ -122,7 +122,7 @@
 
   
     
-    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
@@ -134,19 +134,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
@@ -228,7 +228,7 @@
     <header>
   <div class="title">
     
-      <h2><a href="/blog/supervised-learning-algorithms-r/">Supervised Learning algorithms with R</a></h2>
+      <h2><a href="/blog/supervised-learning-algorithms-r/">Supervised Learning algorithms with R (part 1)</a></h2>
     
     
       <p>We will discover some of the most common supervised learning algorithms and their implementation with R programming language</p>
@@ -237,7 +237,7 @@
   <div class="meta">
     <time datetime="2021-01-05 00:00:00 &#43;0000 UTC">January 5, 2021</time>
     <p>Mohamed Kouhou</p>
-    <p>6-Minute Read</p>
+    <p>11-Minute Read</p>
   </div>
 </header>
 
@@ -249,7 +249,7 @@
 
   
     
-    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
@@ -261,19 +261,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
@@ -317,7 +317,7 @@
 A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^{n}(x_i-y_i)^2}$$ where $x(x_1,...,x_n)$ and $y(y_1,...,y_n)$.
 <p><strong>NB 2 :</strong> As can be seen, there are no parameters that need to be learned during training to determine whether a new observation belongs to class  𝐴  or  𝐵.  The only parameter used in K-Nearest Neighbours is K, which is a predetermined value. The algorithm simply works by looking at the training samples, calculating distances and finding the K examples in the training set that are closest to the new observation. Thus, KNN is a <strong>non-parametric</strong>, <strong>supervised</strong> (needs training labels) learning algorithm.</p>
 <p><strong>NB 3 :</strong> KNN does  support <a href="https://en.wikipedia.org/wiki/Categorical_variable">categorical variables</a> as features, simply because we cannot calculated the distance from them.</p>
-<p>The hands-on example that we will work on will use the <code>Sonar</code> data set (signals) from <code>mlbench</code> library. <code>Sonar</code> is a system for the detection of objects under water and for measuring the water&rsquo;s depth by emitting and detecting sound pulses (the complete description can be found →<a href="https://cran.r-project.org/web/packages/mlbench/mlbench.pdf">here</a>). For our purposes, this is a two-class (class $R$ and class $M$) classification task with numeric data.</p>
+<p>The hands-on example<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> that we will work on will use the <code>Sonar</code> data set (signals) from <code>mlbench</code> library. <code>Sonar</code> is a system for the detection of objects under water and for measuring the water&rsquo;s depth by emitting and detecting sound pulses (the complete description can be found →<a href="https://cran.r-project.org/web/packages/mlbench/mlbench.pdf">here</a>). For our purposes, this is a two-class (class $R$ and class $M$) classification task with numeric data.</p>
 <p>First of all, let&rsquo;s install the required libraries :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># install the packages (note: this may take some time)</span>
 <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;class&#34;</span>)
@@ -407,6 +407,107 @@ best_knn <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tr
 best_knn
 </code></pre></div><p>Running the code above, you&rsquo;ll find out that $K=1$ has the highest accuracy from repeated cross-validation.</p>
 <h2 id="decision-trees">Decision Trees</h2>
+<p><strong>Decision Trees</strong> are one of the most powerful predictive classification models. They are based on the analysis of a set of data points that describe the type of object we want to classify. A Decision tree is a flowchart like tree structure, where each <strong>internal node</strong> denotes a test on an attribute, each <strong>branch</strong> represents an outcome of the test, and each <strong>leaf node</strong> (terminal node) holds a class label.</p>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Champignons_mushrooms_%28950475736%29.jpg" style="width: 50%;
+  height: auto"/></center>
+<p>In our practical example<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, we&rsquo;ll try to classify a set of mushrooms as either <em>edible</em> or <em>poisonous</em> based on features like its cap type, color, odor, shape of its stalk, etc.</p>
+<center>
+  <figure>
+    <img src="https://ibm.box.com/shared/static/ar8rlcoyrs0n0kphj4g4n4rbhe76vpd9.png" style="width: 80%;
+  height: auto"/>
+    <figcaption>Example of mushroom features and their classification</figcaption>
+  </figure>
+</center>
+<p>The algorithm behind Decision trees uses probabilities. For example, if many mushrooms that have large caps are poisonous, the algorithm will assume that the probability of large-cap mushrooms being poisonous is high. When the model is complete, we have a tree-like structure composed of what are called <strong>decision nodes</strong>, which ask our data point questions about its features, and <strong>leaf nodes</strong>, which tells us what classification the decision tree thinks our data point is.</p>
+<center>
+  <figure>
+    <img src="https://ibm.box.com/shared/static/urnm2onpitt8qz2296mltzcfdn1p040f.png" style="width: 80%;
+  height: auto"/>
+    <figcaption>Example of a possible Decision Tree describing mushrooms</figaption>
+  </figure>
+</center>
+<p>The goal of a decision tree is to split the dataset on based on attributes. But how to find the best feature in each node to split?</p>
+<p>To answer this question, let&rsquo;s first define the <strong>Entropy</strong>.</p>
+<p><strong>Entropy</strong> is the amount of information disorder, or the amount of randomness in the data. It is calculated for each node and it depends on how much random data that node contains. In decision tree we are looking for a trees that have smallest entropy in their nodes. The entropy is used to calculate the homogeneity of the samples in that node. If the samples are completely homogeneous the entropy is zero and if the sample is an equally divided it has entropy of one. It means, if all data in a node are either poisonous or edible, then the entropy is zero, but if the half of data are poisonous and other half are edible, then the entropuy is one. In our example, we can calculate the Entropy of our target class using the following formula :</p>
+<p>$$Entropy = - p(edible)log(p(edible)) - p(poisonous)log(p(poisonous))$$</p>
+<p>Decision trees use another metric on which decisions are based : <strong>Information gain</strong>. We can think of it as the opposite of entropy. The more randomness decreases, the more information we gain, and vice-versa. Thus, while building a  decision tree, we choose the attributes with the highest information gain.
+$$\text{Information Gain = entropy(parent) – [average entropy(children)]}$$</p>
+<p><strong>Algorithm :</strong></p>
+<pre><code>  1. Calculate entropy of the target field (the class label) for whole dataset.
+  2. For each attribute:
+    - split the dataset on the attribute
+    - calculate entropy of the target field on splited dataset, using the attribute values
+    - calculate the information gain of the attribute
+  3. select the attribute that has the largest informmation gain
+  4. Branch the tree using the selected attribute
+  5. stop, if it is a node with entropy of 0, otherwise jump to step2
+</code></pre>
+<h4 id="decision-tree-with-r">Decision tree with R</h4>
+<p>We will start by loading the data. We&rsquo;ll use <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/">UCI&rsquo;s</a> <code>Mushroom</code> dataset. Since this dataset is not inbuilt into R, we need to download it and load it into R :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">download.file</span>(<span style="color:#e6db74">&#34;https://ibm.box.com/shared/static/dpdh09s70abyiwxguehqvcq3dn0m7wve.data&#34;</span>, <span style="color:#e6db74">&#34;mushroom.data&#34;</span>)
+</code></pre></div><p>After downloading the file, we need to create a data frame to house the observations in the dataset. Since the dataset is structured using comma-separated values, we can use the <code>read.csv</code> function :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mushrooms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;mushroom.data&#34;</span>, header <span style="color:#f92672">=</span> F)
+mushrooms
+</code></pre></div><p>Once that&rsquo;s done, we have the data loaded up. However, the way that it is structured isn&rsquo;t the most intuitive. In the code cell below, we are adding the column names to the data frame with the <code>colnames</code> function. Additionally, since our data frame is composed of factors, we can rename some of these factors to something more easily understood by us using <code>levels</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Define column names for the mushrooms data frame.</span>
+<span style="color:#a6e22e">colnames</span>(mushrooms) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Class&#34;</span>,<span style="color:#e6db74">&#34;cap.shape&#34;</span>,<span style="color:#e6db74">&#34;cap.surface&#34;</span>,<span style="color:#e6db74">&#34;cap.color&#34;</span>,<span style="color:#e6db74">&#34;bruises&#34;</span>,<span style="color:#e6db74">&#34;odor&#34;</span>,<span style="color:#e6db74">&#34;gill.attachment&#34;</span>,<span style="color:#e6db74">&#34;gill.spacing&#34;</span>,
+                         <span style="color:#e6db74">&#34;gill.size&#34;</span>,<span style="color:#e6db74">&#34;gill.color&#34;</span>,<span style="color:#e6db74">&#34;stalk.shape&#34;</span>,<span style="color:#e6db74">&#34;stalk.root&#34;</span>,<span style="color:#e6db74">&#34;stalk.surface.above.ring&#34;</span>,
+                         <span style="color:#e6db74">&#34;stalk.surface.below.ring&#34;</span>,<span style="color:#e6db74">&#34;stalk.color.above.ring&#34;</span>,<span style="color:#e6db74">&#34;stalk.color.below.ring&#34;</span>,<span style="color:#e6db74">&#34;veil.type&#34;</span>,<span style="color:#e6db74">&#34;veil.color&#34;</span>,
+                         <span style="color:#e6db74">&#34;ring.number&#34;</span>,<span style="color:#e6db74">&#34;ring.type&#34;</span>,<span style="color:#e6db74">&#34;print&#34;</span>,<span style="color:#e6db74">&#34;population&#34;</span>,<span style="color:#e6db74">&#34;habitat&#34;</span>)
+<span style="color:#a6e22e">head</span>(mushrooms)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Define the factor names for &#34;Class&#34;</span>
+<span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>Class) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Edible&#34;</span>,<span style="color:#e6db74">&#34;Poisonous&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Define the factor names for &#34;odor&#34;</span>
+<span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>odor) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Almonds&#34;</span>,<span style="color:#e6db74">&#34;Anise&#34;</span>,<span style="color:#e6db74">&#34;Creosote&#34;</span>,<span style="color:#e6db74">&#34;Fishy&#34;</span>,<span style="color:#e6db74">&#34;Foul&#34;</span>,<span style="color:#e6db74">&#34;Musty&#34;</span>,<span style="color:#e6db74">&#34;None&#34;</span>,<span style="color:#e6db74">&#34;Pungent&#34;</span>,<span style="color:#e6db74">&#34;Spicy&#34;</span>)
+<span style="color:#75715e"># Define the factor names for &#34;print&#34;</span>
+<span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>print) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Black&#34;</span>,<span style="color:#e6db74">&#34;Brown&#34;</span>,<span style="color:#e6db74">&#34;Buff&#34;</span>,<span style="color:#e6db74">&#34;Chocolate&#34;</span>,<span style="color:#e6db74">&#34;Green&#34;</span>,<span style="color:#e6db74">&#34;Orange&#34;</span>,<span style="color:#e6db74">&#34;Purple&#34;</span>,<span style="color:#e6db74">&#34;White&#34;</span>,<span style="color:#e6db74">&#34;Yellow&#34;</span>)
+<span style="color:#a6e22e">head</span>(mushrooms)
+</code></pre></div><p>Now let&rsquo;s build our model. We are going to use <code>rpart</code> library to create the decision tree, and <code>rpart.plot</code> to visualize it.
+But first, install <code>rpart.plot</code> if it&rsquo;s not already installed.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rpart&#34;</span>)
+<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rpart.plot&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Import our required libraries</span>
+<span style="color:#a6e22e">library</span>(rpart)
+<span style="color:#a6e22e">library</span>(rpart.plot)
+</code></pre></div><p>To create our decision tree model, we can use the <code>rpart</code> function. <code>rpart</code> is simple to use: you provide it a <code>formula</code>, show it the dataset it is supposed to use and choose a method (either &ldquo;class&rdquo; for classification or &ldquo;anova&rdquo; for regression).</p>
+<p>A great trick to know when handling very large structured datasets (our dataset has over 20 columns we want to use!) is that in <code>formula</code> declarations, one can use the <code>.</code> operator as a quick way of designating &ldquo;all other columns&rdquo; to R. You can also <code>print</code> the Decision Tree model to retrieve a summary describing it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Create a classification decision tree using &#34;Class&#34; as the variable we want to predict and everything else as its predictors.</span>
+myDecisionTree <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(Class <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> mushrooms, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+<span style="color:#75715e"># Print out a summary of our created model.</span>
+<span style="color:#a6e22e">print</span>(myDecisionTree)
+</code></pre></div><p>Now that we have our model, we can draw it to gain a better understanding of how it is classifying the data points. We can use the <code>rpart.plot</code>function &ndash; a specialized function for plotting trees &ndash; to render our model. This function takes on some parameters for visualizing the tree in different ways &ndash; try changing the type (from 1 to 4) parameter to see what happens!</p>
+<p>If you run the code above, you&rsquo;ll see that our decision tree has perfect accuracy when classifying poisonous mushrooms, and almost perfect accuracy when dealing with edible ones.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">newCase  <span style="color:#f92672">&lt;-</span> mushrooms[10,<span style="color:#ae81ff">-1</span>]
+newCase
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">predict</span>(myDecisionTree, newCase, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</code></pre></div><p><strong>Model accuracy :</strong></p>
+<p>Let&rsquo;s split our dataset into traing set and test set :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## 75% of the sample size</span>
+n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">nrow</span>(mushrooms)
+smp_size <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(<span style="color:#ae81ff">0.75</span> <span style="color:#f92672">*</span> n)
+
+<span style="color:#75715e">## set the seed to make your partition reproductible</span>
+<span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
+train_ind <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n), size <span style="color:#f92672">=</span> smp_size)
+
+mushrooms_train <span style="color:#f92672">&lt;-</span> mushrooms[train_ind, ]
+mushrooms_test <span style="color:#f92672">&lt;-</span> mushrooms[<span style="color:#f92672">-</span>train_ind, ]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">newDT <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(Class <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> mushrooms_train, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">result <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(newDT, mushrooms_test[,<span style="color:#ae81ff">-1</span>], type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(result)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(mushrooms_test<span style="color:#f92672">$</span>Class)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(mushrooms_test<span style="color:#f92672">$</span>Class, result)
+</code></pre></div><section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Credit: <a href="https://www.linkedin.com/in/ehsanmkermani">Ehsan M. Kermani</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Credit: <a href="https://www.linkedin.com/in/saeedaghabozorgi/?originalSubdomain=ca">Saeed Aghabozorgi</a>, <a href="https://www.linkedin.com/in/walter-gomes/">Walter Gomes de Amorim Junior</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
     </div>
     <footer>
@@ -505,7 +606,7 @@ best_knn
     <img class="" src="https://i.ibb.co/rFW5Mc2/supervised-learning-r.png" alt="ml">
   </a>
         <header>
-          <h2><a href="/blog/supervised-learning-algorithms-r/">Supervised Learning algorithms with R</a></h2>
+          <h2><a href="/blog/supervised-learning-algorithms-r/">Supervised Learning algorithms with R (part 1)</a></h2>
           <time class="published" datetime="2021-01-05 00:00:00 &#43;0000 UTC">January 5, 2021</time>
         </header>
       </article>
