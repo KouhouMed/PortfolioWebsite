@@ -22,7 +22,7 @@
 <meta itemprop="description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language">
 <meta itemprop="datePublished" content="2021-01-05T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1184">
+<meta itemprop="wordCount" content="1194">
 <meta itemprop="image" content="">
 
 
@@ -382,7 +382,7 @@ conf_mat_cv
 <p>There are a couple things we can do in order to improve the performance of our model :</p>
 <ul>
 <li><strong>Centering and scaling data</strong> : these are forms of preprocessing numerical data (not suitable for categorical data). Centering a variable means subtracting the mean of the variable from each data point so that the new variable&rsquo;s mean is 0. And scaling consists of multiplying each data point by a constant in order to alter the range of the data.</li>
-<li><strong>Performing a <em>cross-vaidation</em></strong> : this consists of dividing the data into a finite number of subsets. Through each iteration, a subset is set aside, and the remaining subsets are used as the training set. The subset that was set aside is used as the test set (prediction).</li>
+<li><strong>Performing a <em>cross-vaidation</em></strong> : this consists of dividing the data into a finite number of subsets. Through each iteration, a subset is set aside, and the remaining subsets are used as the training set. The subset that was set aside is used as the test set (prediction). We will use <code>caret</code> library for this purpose.</li>
 </ul>
 <p>This is a method of cross-referencing the model built using its own data :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">SEED <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2016</span>
@@ -406,6 +406,7 @@ best_knn <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">tr
                   tuneGrid<span style="color:#f92672">=</span>nn_grid)
 best_knn
 </code></pre></div><p>Running the code above, you&rsquo;ll find out that $K=1$ has the highest accuracy from repeated cross-validation.</p>
+<h2 id="decision-trees">Decision Trees</h2>
 
     </div>
     <footer>

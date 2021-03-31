@@ -142,7 +142,7 @@ The difference between the cross-validated accuracy and the test accuracy shows 
 
 There are a couple things we can do in order to improve the performance of our model :
 * **Centering and scaling data** : these are forms of preprocessing numerical data (not suitable for categorical data). Centering a variable means subtracting the mean of the variable from each data point so that the new variable's mean is 0. And scaling consists of multiplying each data point by a constant in order to alter the range of the data.
-* **Performing a *cross-vaidation*** : this consists of dividing the data into a finite number of subsets. Through each iteration, a subset is set aside, and the remaining subsets are used as the training set. The subset that was set aside is used as the test set (prediction).
+* **Performing a *cross-vaidation*** : this consists of dividing the data into a finite number of subsets. Through each iteration, a subset is set aside, and the remaining subsets are used as the training set. The subset that was set aside is used as the test set (prediction). We will use `caret` library for this purpose.
 
 This is a method of cross-referencing the model built using its own data :
 
@@ -176,3 +176,5 @@ best_knn <- train(Class~., data=ndf_train,
 best_knn
 ```
 Running the code above, you'll find out that $K=1$ has the highest accuracy from repeated cross-validation.
+
+## Decision Trees
