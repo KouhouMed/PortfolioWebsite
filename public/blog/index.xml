@@ -6,7 +6,17 @@
     <description>Recent content in Blog on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Supervised Learning algorithms with R (part 2)</title>
+      <link>https://kouhoumed.site/blog/supervised-algorithms-with-r-2/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kouhoumed.site/blog/supervised-algorithms-with-r-2/</guid>
+      <description>In a previous article, we have explained the principles of K-Nearest Neighbours and Decision Trees and seen hands-on examples of how these models can be created using R programming language. In this article, we will continue on the same track and see other supervised learning algorithms, namely Linear Regression and Logistic Regression.
+Linear Regression  Linear Regression is a predictive model used to predict the outcome value of an outcome variable Y based on one or more input predictor variables X.</description>
+    </item>
+    
     <item>
       <title>Supervised Learning algorithms with R (part 1)</title>
       <link>https://kouhoumed.site/blog/supervised-learning-algorithms-r/</link>

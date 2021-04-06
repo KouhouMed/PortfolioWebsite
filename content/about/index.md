@@ -52,30 +52,58 @@ I am glad that I had the chance to take many online courses in different domains
 
 <div class="outer-grid">
    <div class="inner-grid">
-      <img src="https://images.youracclaim.com/size/340x340/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/dfd6eb51-4caa-4ffe-b107-85ece064370c/Data_Science_Methodologies.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/087eaefb-61a2-426b-ae74-74efca195667/Data_Visualization_Using_Python.png"/>
+      <a href="https://www.credly.com/badges/e13f5e07-42b5-477b-9a8b-c125ffc11b23/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/99a8c077-b57d-4327-a097-564da5954c02/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/dfd6eb51-4caa-4ffe-b107-85ece064370c/Data_Science_Methodologies.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/22f29b40-bd24-4a86-b979-5cc04db3c230/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/087eaefb-61a2-426b-ae74-74efca195667/Data_Visualization_Using_Python.png"/>
+      </a>
    </div>
    <div class="inner-grid">
-      <img src="https://images.youracclaim.com/size/340x340/images/f2f9716d-7be0-47ef-b4ad-c8d3b481b9d7/Data_Sci_Business_Level_1_-_CC_-_2019.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/49211314-919e-4207-885a-7d2ff76ddb07/Statistics_101_-_CC.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/d2cc88b1-1f59-41d2-9f1c-83190e3541e1/R_Essentials.png"/>
+      <a href="https://www.credly.com/badges/bb52abdb-df1d-4b91-86e1-b7392a2faddb/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/f2f9716d-7be0-47ef-b4ad-c8d3b481b9d7/Data_Sci_Business_Level_1_-_CC_-_2019.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/aeae648f-a0cb-483b-8879-33b2cf9e6077/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/49211314-919e-4207-885a-7d2ff76ddb07/Statistics_101_-_CC.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/64fed60d-7057-498d-a9af-e78ef4ad7fdd/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/d2cc88b1-1f59-41d2-9f1c-83190e3541e1/R_Essentials.png"/>
+      </a>
    </div>
    <div class="inner-grid">
-      <img src="https://images.youracclaim.com/size/340x340/images/c2ddc533-ba6c-464d-a69d-f9f28177176b/CertiProf-Badge-SFPC.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/84ac9eff-b8a2-4683-846b-f59887a73801/Python_101_Data_Science.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/fb8597e1-9283-459d-8770-b2679e42a700/Data_Visualization_with_R.png"/>
+      <a href="https://www.credly.com/badges/b0e314e6-cccb-4357-9449-55a1aaba3150/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/c2ddc533-ba6c-464d-a69d-f9f28177176b/CertiProf-Badge-SFPC.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/bfa16ea7-69d8-48da-9c34-07eb974e65f2/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/84ac9eff-b8a2-4683-846b-f59887a73801/Python_101_Data_Science.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/30926a52-0333-40fc-b0c7-a691faca5b45/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/fb8597e1-9283-459d-8770-b2679e42a700/Data_Visualization_with_R.png"/>
+      </a>
    </div>
    <div class="inner-grid">
-      <img src="https://images.youracclaim.com/size/340x340/images/f5cf37e4-6ebd-4067-96a9-b26d04f51ff7/CertiProf-Badge-LLL.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/ba34cb1c-4344-43f5-9685-55e2e901c0f0/Data_Analysis_using_Python.png"/>
-      <img src="https://images.youracclaim.com/size/340x340/images/5ca7b236-6105-4154-ba22-c8ae12ec1d8c/Data_Sci_Found_Level_1_-_CC_-_2019.png"/>
+      <a href="https://www.credly.com/badges/a1b514fa-b1df-400c-95ce-e27303ec4492/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/f5cf37e4-6ebd-4067-96a9-b26d04f51ff7/CertiProf-Badge-LLL.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/117e9d98-16be-498f-9cc4-3bd8984bc547/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/ba34cb1c-4344-43f5-9685-55e2e901c0f0/Data_Analysis_using_Python.png"/>
+      </a>
+      <a href="https://www.credly.com/badges/f3e9ca86-540e-4892-9a6f-f13b2b42400c/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/5ca7b236-6105-4154-ba22-c8ae12ec1d8c/Data_Sci_Found_Level_1_-_CC_-_2019.png"/>
+      </a>
    </div>
    <div class="inner-grid">
-      <img src="https://images.youracclaim.com/size/340x340/images/de9471ce-018c-4bf4-af49-5c9c1d488613/Data_Science_Tools.png"/>
+      <a href="https://www.credly.com/badges/82169864-6be7-4d82-8417-f4226112030c/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/de9471ce-018c-4bf4-af49-5c9c1d488613/Data_Science_Tools.png"/>
+      </a>
    </div>
    <div class="inner-grid">
-      <img src="https://images.youracclaim.com/size/340x340/images/53caf8cc-b5e9-4424-b4a7-7b069fa13db4/Machine_Learning_with_Python.png"/>
+      <a href="https://www.credly.com/badges/d78ba395-7c03-4b03-ad4d-ef11f9985041/public_url">
+         <img src="https://images.youracclaim.com/size/340x340/images/53caf8cc-b5e9-4424-b4a7-7b069fa13db4/Machine_Learning_with_Python.png"/>
+      </a>
    </div>
 </div>
 
