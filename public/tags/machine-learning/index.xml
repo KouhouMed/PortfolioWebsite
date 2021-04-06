@@ -14,7 +14,7 @@
       
       <guid>https://kouhoumed.site/blog/supervised-algorithms-with-r-2/</guid>
       <description>In a previous article, we have explained the principles of K-Nearest Neighbours and Decision Trees and seen hands-on examples of how these models can be created using R programming language. In this article, we will continue on the same track and see other supervised learning algorithms, namely Linear Regression and Logistic Regression.
-Linear Regression  Linear Regression is a predictive model used to predict the outcome value of an outcome variable Y based on one or more input predictor variables X.</description>
+Regression is one of the most important fields in statistics and machine learning. Its objective is to find relationships between variables.</description>
     </item>
     
     <item>
