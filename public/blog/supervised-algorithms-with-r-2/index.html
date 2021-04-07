@@ -22,7 +22,7 @@
 <meta itemprop="description" content="2nd part of the previous article about some of the most common supervised learning algorithms and their implementation with R">
 <meta itemprop="datePublished" content="2021-01-07T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-07T00:00:00+00:00" />
-<meta itemprop="wordCount" content="586">
+<meta itemprop="wordCount" content="647">
 <meta itemprop="image" content="">
 
 
@@ -237,7 +237,7 @@
   <div class="meta">
     <time datetime="2021-01-07 00:00:00 &#43;0000 UTC">January 7, 2021</time>
     <p>Mohamed Kouhou</p>
-    <p>3-Minute Read</p>
+    <p>4-Minute Read</p>
   </div>
 </header>
 
@@ -321,6 +321,9 @@ This method is called the method of <strong>ordinary least squares</strong>.</p>
 </center>
 <p>After fitting our model, we would eventually want to measure how good the fit is. One way to do it is by calculating $R^2$ also called <strong><a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">Coefficient of determination</a></strong>.</p>
 <p>The variation of the actual responses $Y^{(i)}$ is partly due to their dependence on $X$. But there is also a part of the overall variation that is intrinsic to the output itself.</p>
+<p>$$R^2=\dfrac{\text{Variance explained by the model}}{\text{Total variance}}=1-\dfrac{SSR}{TSS}$$</p>
+<p>$SSR$ : <a href="https://en.wikipedia.org/wiki/Residual_sum_of_squares">sum of squared residuals</a><br>
+$TSS$ : <a href="https://en.wikipedia.org/wiki/Total_sum_of_squares">total sum of squares</a></p>
 <p>$R^2$ is the amount of variation in $Y$ that can be explained by its relationship with $X$. Usually, the larger the $R^2$, the better the regression model fits your observations and can better explain the variation of the output with different inputs. $R^2=1$ corresponds to the case where $SSR=0$
 , which is the <strong>perfect fit</strong>.</p>
 <center>
@@ -341,8 +344,17 @@ This method is called the method of <strong>ordinary least squares</strong>.</p>
   .inline-block {
     display: inline-block;
   }
-</style><blockquote>
-</blockquote>
+</style>
+<h4 id="simple-linear-regression">Simple linear regression</h4>
+<p><strong>Simple Linear Regression</strong> is the simplest case of linear regression as it only involves a single independent variable $X=x$.</p>
+<center>
+  <figure>
+    <img src="https://miro.medium.com/max/2584/0*Y_wKuvGOCaoUQKeJ.png" style="width: 50%;
+    height: auto"/>
+    <figcaption>Simple Linear Regression plot</figcaption>
+  </figure>
+</center>
+<p>Simple linear regression helps us summarize and study relationships between two continuous (quantitative) variables $X=x$ and $Y$.</p>
 
     </div>
     <footer>

@@ -52,6 +52,11 @@ After fitting our model, we would eventually want to measure how good the fit is
 
 The variation of the actual responses $Y^{(i)}$ is partly due to their dependence on $X$. But there is also a part of the overall variation that is intrinsic to the output itself.
 
+$$R^2=\dfrac{\text{Variance explained by the model}}{\text{Total variance}}=1-\dfrac{SSR}{TSS}$$
+
+$SSR$ : [sum of squared residuals](https://en.wikipedia.org/wiki/Residual_sum_of_squares)  
+$TSS$ : [total sum of squares](https://en.wikipedia.org/wiki/Total_sum_of_squares)
+
 $R^2$ is the amount of variation in $Y$ that can be explained by its relationship with $X$. Usually, the larger the $R^2$, the better the regression model fits your observations and can better explain the variation of the output with different inputs. $R^2=1$ corresponds to the case where $SSR=0$
 , which is the **perfect fit**.
 
@@ -75,3 +80,17 @@ $R^2$ is the amount of variation in $Y$ that can be explained by its relationshi
     display: inline-block;
   }
 </style>
+
+#### Simple linear regression
+
+**Simple Linear Regression** is the simplest case of linear regression as it only involves a single independent variable $X=x$.
+
+<center>
+  <figure>
+    <img src="https://miro.medium.com/max/2584/0*Y_wKuvGOCaoUQKeJ.png" style="width: 50%;
+    height: auto"/>
+    <figcaption>Simple Linear Regression plot</figcaption>
+  </figure>
+</center>
+
+Simple linear regression helps us summarize and study relationships between two continuous (quantitative) variables $X=x$ and $Y$.
