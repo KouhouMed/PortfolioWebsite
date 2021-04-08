@@ -22,7 +22,7 @@
 <meta itemprop="description" content="2nd part of the previous article about some of the most common supervised learning algorithms and their implementation with R">
 <meta itemprop="datePublished" content="2021-01-07T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-07T00:00:00+00:00" />
-<meta itemprop="wordCount" content="647">
+<meta itemprop="wordCount" content="913">
 <meta itemprop="image" content="">
 
 
@@ -237,7 +237,7 @@
   <div class="meta">
     <time datetime="2021-01-07 00:00:00 &#43;0000 UTC">January 7, 2021</time>
     <p>Mohamed Kouhou</p>
-    <p>4-Minute Read</p>
+    <p>5-Minute Read</p>
   </div>
 </header>
 
@@ -346,15 +346,34 @@ $TSS$ : <a href="https://en.wikipedia.org/wiki/Total_sum_of_squares">total sum o
   }
 </style>
 <h4 id="simple-linear-regression">Simple linear regression</h4>
-<p><strong>Simple Linear Regression</strong> is the simplest case of linear regression as it only involves a single independent variable $X=x$.</p>
+<p><strong>Simple linear regression</strong> is the simplest case of linear regression. It helps us summarize and study relationships between two continuous (quantitative) variables $X=x$ (the input, which is comprised of a single feauture) and $y$ (the output).</p>
 <center>
   <figure>
     <img src="https://miro.medium.com/max/2584/0*Y_wKuvGOCaoUQKeJ.png" style="width: 50%;
     height: auto"/>
-    <figcaption>Simple Linear Regression plot</figcaption>
+    <figcaption>Example of Simple Linear Regression</figcaption>
   </figure>
 </center>
-<p>Simple linear regression helps us summarize and study relationships between two continuous (quantitative) variables $X=x$ and $Y$.</p>
+<p>In the plot above, the red line represents the <strong>regression function</strong> $f(x)=b_0+b_1x$. The goal is to estimate the values of $b_0$ (<strong>intercept</strong>) and $b_1$ (<strong>coefficient</strong> or <strong>slope</strong>) that minimize the SSR.</p>
+<h4 id="multiple-linear-regression">Multiple Linear Regression</h4>
+<p>Multiple or multivariate linear regression is a case of linear regression with two or more independent variables.
+For example, if there are just two independent variables, the estimated regression function is $f(x_1,x_2)=b_0+b_1x_1+b_2x_2$</p>
+<center>
+  <figure>
+    <img src="https://user-images.githubusercontent.com/8947634/68350337-e78e3480-00f7-11ea-8fb3-24a5cca683d7.png" style="width: 100%;
+    height: auto"/>
+    <figcaption>Example of plot illustrating Linear Regression with 2 features and 1 target</figcaption>
+  </figure>
+</center>
+<p>The goal of regression is to determine the values of the weights $b_0$, $b_1$, and $b_2$ such that this plane is as close as possible to the actual responses and yield the minimal SSR.</p>
+<p>The case of more than two independent variables is similar, but more general. The estimated regression function is $f(x_1,&hellip;,x_r)$, and there are $r+1$ weights to be determined when the number of inputs is $r$.</p>
+<h4 id="polynomial-regression">Polynomial Regression</h4>
+<p>Linear Regression assumes a linear relationship between variables. But in most real life cases, data is too complex to be modeled linearly. In order to overcome under-fitting, we need to increase the complexity of the model. So when it comes to generating a curve that best captures the data (as in the figure below), <strong>Polynomial Regression</strong> may be the answer.</p>
+<center>
+    <img src="https://miro.medium.com/max/640/1*ELey2wytlZvKYFLbLbhCoA.png" style="width: 70%;
+    height: auto"/>
+</center>
+<p>Polynomial regression can be regarded as a generalization of linear regression in which we assume the polynomial dependence between the output and inputs and, consequently, the polynomial estimated regression function. In other words, in addition to linear terms like $b_1x_1$, regression function also includes non-linear terms such as $b_2x_1^2$, $b_3x_1^3$, or even $b_4x_1x_2$, $b_5x_1^2x_2$ and so on.</p>
 
     </div>
     <footer>

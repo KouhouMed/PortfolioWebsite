@@ -83,14 +83,43 @@ $R^2$ is the amount of variation in $Y$ that can be explained by its relationshi
 
 #### Simple linear regression
 
-**Simple Linear Regression** is the simplest case of linear regression as it only involves a single independent variable $X=x$.
+**Simple linear regression** is the simplest case of linear regression. It helps us summarize and study relationships between two continuous (quantitative) variables $X=x$ (the input, which is comprised of a single feauture) and $y$ (the output). 
+
 
 <center>
   <figure>
     <img src="https://miro.medium.com/max/2584/0*Y_wKuvGOCaoUQKeJ.png" style="width: 50%;
     height: auto"/>
-    <figcaption>Simple Linear Regression plot</figcaption>
+    <figcaption>Example of Simple Linear Regression</figcaption>
   </figure>
 </center>
 
-Simple linear regression helps us summarize and study relationships between two continuous (quantitative) variables $X=x$ and $Y$.
+In the plot above, the red line represents the **regression function** $f(x)=b_0+b_1x$. The goal is to estimate the values of $b_0$ (**intercept**) and $b_1$ (**coefficient** or **slope**) that minimize the SSR.
+
+#### Multiple Linear Regression
+
+Multiple or multivariate linear regression is a case of linear regression with two or more independent variables.
+For example, if there are just two independent variables, the estimated regression function is $f(x_1,x_2)=b_0+b_1x_1+b_2x_2$
+
+<center>
+  <figure>
+    <img src="https://user-images.githubusercontent.com/8947634/68350337-e78e3480-00f7-11ea-8fb3-24a5cca683d7.png" style="width: 100%;
+    height: auto"/>
+    <figcaption>Example of plot illustrating Linear Regression with 2 features and 1 target</figcaption>
+  </figure>
+</center>
+
+The goal of regression is to determine the values of the weights $b_0$, $b_1$, and $b_2$ such that this plane is as close as possible to the actual responses and yield the minimal SSR.
+
+The case of more than two independent variables is similar, but more general. The estimated regression function is $f(x_1,...,x_r)$, and there are $r+1$ weights to be determined when the number of inputs is $r$.
+
+#### Polynomial Regression
+
+Linear Regression assumes a linear relationship between variables. But in most real life cases, data is too complex to be modeled linearly. In order to overcome under-fitting, we need to increase the complexity of the model. So when it comes to generating a curve that best captures the data (as in the figure below), **Polynomial Regression** may be the answer.
+
+<center>
+    <img src="https://miro.medium.com/max/640/1*ELey2wytlZvKYFLbLbhCoA.png" style="width: 70%;
+    height: auto"/>
+</center>
+
+Polynomial regression can be regarded as a generalization of linear regression in which we assume the polynomial dependence between the output and inputs and, consequently, the polynomial estimated regression function. In other words, in addition to linear terms like $b_1x_1$, regression function also includes non-linear terms such as $b_2x_1^2$, $b_3x_1^3$, or even $b_4x_1x_2$, $b_5x_1^2x_2$ and so on.
