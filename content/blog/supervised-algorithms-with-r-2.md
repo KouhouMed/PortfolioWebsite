@@ -122,4 +122,12 @@ Linear Regression assumes a linear relationship between variables. But in most r
     height: auto"/>
 </center>
 
-Polynomial regression can be regarded as a generalization of linear regression in which we assume the polynomial dependence between the output and inputs and, consequently, the polynomial estimated regression function. In other words, in addition to linear terms like $b_1x_1$, regression function also includes non-linear terms such as $b_2x_1^2$, $b_3x_1^3$, or even $b_4x_1x_2$, $b_5x_1^2x_2$ and so on.
+Polynomial regression can be regarded as a generalization of linear regression in which we assume the polynomial dependence between the output and inputs and, consequently, the polynomial estimated regression function. In other words, in addition to linear terms like $b_1x_1$, regression function also includes non-linear terms such as $b_2x_1^2$, $b_3x_1^3$, or even $b_4x_1x_2$, $b_5x_1^2x_2$ and so on.  
+
+Note that a polynomial regression problem can be solved by transforming it into a linear model, which is easier to solve. For example, if we consider this following polynomial regression function $f(x)=b_0+b_1x+b_2x^2$, the term $x_2$ can be considered as a new feature. The previous regression function is then equivalent to the following multilinear regression function $f(x_1,x_2)=b_0+b_1x_1+b_2x_2$.
+
+Similarly, in the case of a polynomial regression problem with multiple input variables, each non-linear term in the regression function can be considered as a new input ($x_1^2$, $x_1x_2$, $x_2^2$, ...). What you get as the result of regression are the values of the weights ($b_0,b_1,b_2...$) which minimize SSR.
+
+#### Implementing Simple Linear Regression with R
+
+Let's see a concrete example on how to implement simple linear regression in R programming language. We will use  
