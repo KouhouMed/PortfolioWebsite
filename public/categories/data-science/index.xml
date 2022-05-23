@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Science on Mohamed Kouhou&#39;s personal website</title>
-    <link>https://kouhoumed.site/categories/data-science/</link>
+    <link>https://kouhoumed.com/categories/data-science/</link>
     <description>Recent content in Data Science on Mohamed Kouhou&#39;s personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.site/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kouhoumed.com/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supervised Learning algorithms with R (part 2)</title>
-      <link>https://kouhoumed.site/blog/supervised-algorithms-with-r-2/</link>
+      <link>https://kouhoumed.com/blog/supervised-algorithms-with-r-2/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://kouhoumed.site/blog/supervised-algorithms-with-r-2/</guid>
+      <guid>https://kouhoumed.com/blog/supervised-algorithms-with-r-2/</guid>
       <description>In a previous article, we have explained the principles of K-Nearest Neighbours and Decision Trees and seen hands-on examples of how these models can be created using R programming language. In this article, we will continue on the same track and see other supervised learning algorithms, namely Linear Regression and Logistic Regression.
 Regression is one of the most important fields in statistics and machine learning. Its objective is to find relationships between variables.</description>
     </item>
     
     <item>
       <title>Supervised Learning algorithms with R (part 1)</title>
-      <link>https://kouhoumed.site/blog/supervised-learning-algorithms-r/</link>
+      <link>https://kouhoumed.com/blog/supervised-learning-algorithms-r/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://kouhoumed.site/blog/supervised-learning-algorithms-r/</guid>
+      <guid>https://kouhoumed.com/blog/supervised-learning-algorithms-r/</guid>
       <description>As I mentioned in an earlier post, machine learning algorithms are categorized into three main types :
  Supervised learning algorithms Unsupervised learning algorithms Reinfocement learning algorithms  In this article, we will only talk about some of machine learning supervised algorithms. We&amp;rsquo;ll also see examples using R programming language.
 First of all, I would like to remind you that supervised learning is a machine learning algorithm that tries to find a function mapping an input to a given output based on a set of examples.</description>
@@ -30,10 +30,10 @@ First of all, I would like to remind you that supervised learning is a machine l
     
     <item>
       <title>What is machine learning ?</title>
-      <link>https://kouhoumed.site/blog/ml/</link>
+      <link>https://kouhoumed.com/blog/ml/</link>
       <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kouhoumed.site/blog/ml/</guid>
+      <guid>https://kouhoumed.com/blog/ml/</guid>
       <description>&amp;ldquo;What we want is a machine that can learn from experience&amp;rdquo;
 Alan Turing, 1947
  What is machine learning ? Machine learning is a form of artificial intelligence (AI) that allows a system to learn from data without explicitly programming the instructions to be executed. However, machine learning is not a simple process. As the algorithms ingest the training data, it becomes possible to create more accurate models based on that data.</description>
@@ -41,10 +41,10 @@ Alan Turing, 1947
     
     <item>
       <title>What is Data Science ?</title>
-      <link>https://kouhoumed.site/blog/ds/</link>
+      <link>https://kouhoumed.com/blog/ds/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kouhoumed.site/blog/ds/</guid>
+      <guid>https://kouhoumed.com/blog/ds/</guid>
       <description>“You can have data without information, but you cannot have information without data.” – Daniel Keys Moran
  Data science is one of the most debated topics in the industries these days. Its popularity has grown over the years, and companies have started implementing data science techniques to grow their business and increase customer satisfaction. According to a study conducted in 2013, 90% of the world&amp;rsquo;s data has been produced within the previous two years.</description>
     </item>
