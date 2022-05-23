@@ -18,30 +18,24 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.76.5" /><meta itemprop="name" content="Supervised Learning algorithms with R (part 2)">
-<meta itemprop="description" content="2nd part of the previous article about some of the most common supervised learning algorithms and their implementation with R">
-<meta itemprop="datePublished" content="2021-01-07T00:00:00+00:00" />
+<meta name="generator" content="Hugo 0.99.1" /><meta itemprop="name" content="Supervised Learning algorithms with R (part 2)">
+<meta itemprop="description" content="2nd part of the previous article about some of the most common supervised learning algorithms and their implementation with R"><meta itemprop="datePublished" content="2021-01-07T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-07T00:00:00+00:00" />
-<meta itemprop="wordCount" content="913">
-<meta itemprop="image" content="">
-
-
-
-<meta itemprop="keywords" content="machine learning,data science," />
-<meta property="og:title" content="Supervised Learning algorithms with R (part 2)" />
+<meta itemprop="wordCount" content="1043"><meta itemprop="image" content="">
+<meta itemprop="keywords" content="machine learning,data science," /><meta property="og:title" content="Supervised Learning algorithms with R (part 2)" />
 <meta property="og:description" content="2nd part of the previous article about some of the most common supervised learning algorithms and their implementation with R" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kouhoumed.site/blog/supervised-algorithms-with-r-2/" />
-<meta property="og:image" content="" />
+<meta property="og:url" content="https://kouhoumed.site/blog/supervised-algorithms-with-r-2/" /><meta property="og:image" content="" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-01-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-01-07T00:00:00+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content=""/>
 
 <meta name="twitter:title" content="Supervised Learning algorithms with R (part 2)"/>
 <meta name="twitter:description" content="2nd part of the previous article about some of the most common supervised learning algorithms and their implementation with R"/>
 <meta name="twitter:site" content="@MohamedKouhou"/>
-<link rel="stylesheet" href="/css/bundle.min.d9e04ae08c9b3049b766dbd4aeab7d862c5ea1d13679b621490e0f5df5507497.css" integrity="sha256-2eBK4IybMEm3ZtvUrqt9hixeodE2ebYhSQ4PXfVQdJc="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/bundle.min.6ad9eb85bff384c75937a02036b01425a2ca63f19a96535b8ba5b181db62a4b3.css" integrity="sha256-atnrhb/zhMdZN6AgNrAUJaLKY/GallNbi6WxgdtipLM="><link rel="stylesheet" href="/css/add-on.css">
   <script>
     MathJax = {
       tex: {
@@ -164,12 +158,12 @@
 
     <div id="wrapper">
       <section id="site-intro" >
-  <a href="/"><img src="https://kouhoumed.site/images/photo.jpg" class="circle" width="100" alt="Picture" /></a>
+  <a href="/"><img src="https://kouhoumed.site/images/photo2.jpg" class="circle" width="100" alt="Picture" /></a>
   <header>
     <h1>Mohamed Kouhou</h1>
   </header>
   <main>
-    <p>Data Engineering Student at The National Institute of Posts and Telecommunications, Rabat, Morocco <br> <strong><a href='#' style='color : rgb(75, 145, 216)'>→My résumé←</a></strong></p>
+    <p>Artificial Intelligence Student at ENSEIRB-MATMECA, Bordeaux INP <br> <strong><a href='https://drive.google.com/file/d/128wq_It6RMGFpv2R9D6Idf9tPizjCOAh/view?usp=sharing' style='color : rgb(75, 145, 216)'>→My résumé←</a></strong></p>
   </main>
   
     <footer>
@@ -305,7 +299,7 @@
 <p><strong>Linear Regression</strong> is the simplest regression method and the most widely used because of the ease of interpreting results. It is a predictive model used to predict the outcome value of an outcome variable (<strong>dependent variable</strong>) Y based on one or more input predictor variables (<strong>independent variables</strong>) X. The aim is to establish a linear relationship (a mathematical formula) between the predictor variable(s) and the response variable, so that we can use this formula to estimate the value of the response Y, when only the predictors values are known.</p>
 </blockquote>
 <p>A linear regression between dependent variable $Y$ and a set of independent variables $X=(x_1,&hellip;,x_n)$ assumes that there is a linear relationship between $X$ and $Y$, i.e. :
-$$Y=\beta_0 + \beta_1x_1 + &hellip; + \beta_nx_n + \varepsilon$$ 
+$$Y=\beta_0 + \beta_1x_1 + &hellip; + \beta_nx_n + \varepsilon$$
 The equation above is called the <strong>regression equation</strong>. $\beta_0, \beta_1, &hellip;, \beta_n$ are called the <strong>regression coefficients</strong>, and $\varepsilon$ is the <strong>random error</strong>.</p>
 <p>Linear regression calculates the <strong>predicted weights</strong> $\hat{\beta}_0, \hat{\beta}_1, &hellip;, \hat{\beta}_n$ that define the <strong>regression function</strong> :
 $$f(X)=\hat{\beta}_0 + \hat{\beta}_1x_1 + &hellip; + \hat{\beta}_nx_n$$</p>
@@ -374,6 +368,10 @@ For example, if there are just two independent variables, the estimated regressi
     height: auto"/>
 </center>
 <p>Polynomial regression can be regarded as a generalization of linear regression in which we assume the polynomial dependence between the output and inputs and, consequently, the polynomial estimated regression function. In other words, in addition to linear terms like $b_1x_1$, regression function also includes non-linear terms such as $b_2x_1^2$, $b_3x_1^3$, or even $b_4x_1x_2$, $b_5x_1^2x_2$ and so on.</p>
+<p>Note that a polynomial regression problem can be solved by transforming it into a linear model, which is easier to solve. For example, if we consider this following polynomial regression function $f(x)=b_0+b_1x+b_2x^2$, the term $x_2$ can be considered as a new feature. The previous regression function is then equivalent to the following multilinear regression function $f(x_1,x_2)=b_0+b_1x_1+b_2x_2$.</p>
+<p>Similarly, in the case of a polynomial regression problem with multiple input variables, each non-linear term in the regression function can be considered as a new input ($x_1^2$, $x_1x_2$, $x_2^2$, &hellip;). What you get as the result of regression are the values of the weights ($b_0,b_1,b_2&hellip;$) which minimize SSR.</p>
+<h4 id="implementing-simple-linear-regression-with-r">Implementing Simple Linear Regression with R</h4>
+<p>Let&rsquo;s see a concrete example on how to implement simple linear regression in R programming language. We will use</p>
 
     </div>
     <footer>
@@ -588,7 +586,7 @@ For example, if there are just two independent variables, the estimated regressi
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
       <script src="/js/highlight.js"></script>
     
-    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.5955090a3253deadcd66071270aa2274dabe15ffc97094cec252d87b6f3f00bf.js" integrity="sha256-WVUJCjJT3q3NZgcScKoidNq&#43;Ff/JcJTOwlLYe28/AL8="></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.54707815e5447e1e27c47f5dfe90b1c26e7554abf3b411d70aacd3d43158f32b.js" integrity="sha256-VHB4FeVEfh4nxH9d/pCxwm51VKvztBHXCqzT1DFY8ys="></script>
     <script src="/js/add-on.js"></script>
     </div>
   </body>
