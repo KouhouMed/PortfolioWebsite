@@ -49,7 +49,7 @@ disableLanguages        = []
 
   [params.intro]
     header                = "Mohamed Kouhou"
-    paragraph             = "Artificial Intelligence Student at ENSEIRB-MATMECA, Bordeaux INP <br> <strong><a href='https://drive.google.com/file/d/128wq_It6RMGFpv2R9D6Idf9tPizjCOAh/view?usp=sharing' style='color : rgb(75, 145, 216)'>→My résumé←</a></strong>"
+    paragraph             = "Artificial Intelligence Student at ENSEIRB-MATMECA, Bordeaux INP <br> <strong><a href='https://drive.google.com/file/d/1u4joEVBVUUqLV2iKisES8kQTMXiWNRZT/view?usp=sharing' style='color : rgb(75, 145, 216)'>→My résumé←</a></strong>"
     rssIntro              = false
     socialIntro           = true
     hideWhenSingleColumn  = false
