@@ -330,6 +330,8 @@ head(mushrooms_test$Class)
 base::table(mushrooms_test$Class, result)
 ```
 
+That's it! See you on another cool article :)
+
 
 
 [^1]: Credit: <a href="https://www.linkedin.com/in/ehsanmkermani">Ehsan M. Kermani</a>
