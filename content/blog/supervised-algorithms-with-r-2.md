@@ -11,7 +11,7 @@ categories = ["machine learning", "data science"]
   stretch = "stretchH"
 +++
 
-In a <a href="https://kouhoumed.site/blog/supervised-learning-algorithms-r/">previous article</a>, we have explained the principles of K-Nearest Neighbours and Decision Trees and seen hands-on examples of how these models can be created using R programming language. In this article, we will continue on the same track and see other supervised learning algorithms, namely **Linear Regression** and **Logistic Regression**.  
+In a <a href="https://www.kouhoumed.com/blog/supervised-learning-algorithms-r/">previous article</a>, we have explained the principles of K-Nearest Neighbours and Decision Trees and seen hands-on examples of how these models can be created using R programming language. In this article, we will continue on the same track and see other supervised learning algorithms, namely **Linear Regression** and **Logistic Regression**.  
 
 **Regression** is one of the most important fields in statistics and machine learning. Its objective is to find relationships between variables. On use case of regression is when you try to find out how some features of employees -- such as experience, role, education and city -- influence their salaries. To solve this problem, we apply regression on a dataset comprised of a large enough amount observations, each representing the data (features) related to each employee. 
 
