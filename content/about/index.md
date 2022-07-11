@@ -6,7 +6,7 @@ date = "2020-11-08"
 layout = "about"
 +++
 
-→<strong><a href='https://drive.google.com/file/d/1u4joEVBVUUqLV2iKisES8kQTMXiWNRZT/view?usp=sharing' style='color : rgb(61, 101, 194);'> [CV] </a></strong>← <br> <br>  
+→<strong><a href='https://drive.google.com/file/d/1j2O--EL9l8yiTWKLgmdEl9B8CgBSjUTt/view?usp=sharing' style='color : rgb(61, 101, 194);'> [CV] </a></strong>← <br> <br>  
 
 This website will give you an overview of my academic and professional career, as well as some of my interests. And you will also find some articles about different topics.  
   
