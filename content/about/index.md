@@ -12,7 +12,7 @@ This website will give you an overview of my academic and professional career, a
   
 I am a Data Engineering student in my 2<sup>nd</sup> year at the **[National Institute of Posts and Telecommunications](http://inpt.ac.ma)**, _Rabat, Morocco_.
 
-![picture](/images/IMG_0748.jpeg)  
+![picture](/images/MyPhoto1.jpeg)  
 
 My educational career was marked by a lot of moving between cities and compuses (Akka, Tata, Taroudant, Agadir, Rabat...). And this made a significant contribution in the process of developping my personality, building my network, and acquiring a variety of skills.    
 
