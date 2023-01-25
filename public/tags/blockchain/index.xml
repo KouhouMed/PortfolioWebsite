@@ -14,7 +14,7 @@
       
       <guid>https://kouhoumed.com/blog/blockchain/</guid>
       <description>MathJax Test $$\int x^3 dx$$
-Code highlighting Test  if(FALSE) {  &amp;#34;This is a demo for multi-line comments and it should be put inside either a single OR double quote&amp;#34; }  myString &amp;lt;- &amp;#34;Hello, World!&amp;#34; print ( myString) </description>
+Code highlighting Test if(FALSE) { &amp;#34;This is a demo for multi-line comments and it should be put inside either a single OR double quote&amp;#34; } myString &amp;lt;- &amp;#34;Hello, World!&amp;#34; print ( myString) </description>
     </item>
     
   </channel>
