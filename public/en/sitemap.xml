@@ -1,125 +1,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://kouhoumed.site/blog/</loc>
+    <loc>https://kouhoumed.com/blog/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/categories/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/categories/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://kouhoumed.site/fr/categories/"
+                href="https://kouhoumed.com/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kouhoumed.site/categories/"
+                href="https://kouhoumed.com/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/categories/data-science/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/tags/data-science/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/tags/data-science/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/categories/data-science/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/categories/machine-learning/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/tags/machine-learning/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/tags/machine-learning/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/categories/machine-learning/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://kouhoumed.site/fr/"
+                href="https://kouhoumed.com/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kouhoumed.site/"
+                href="https://kouhoumed.com/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/blog/supervised-algorithms-with-r-2/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/blog/supervised-algorithms-with-r-2/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/tags/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/tags/</loc>
     <lastmod>2021-01-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://kouhoumed.site/fr/tags/"
+                href="https://kouhoumed.com/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kouhoumed.site/tags/"
+                href="https://kouhoumed.com/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/blog/supervised-learning-algorithms-r/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/blog/supervised-learning-algorithms-r/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/blog/ml/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/blog/ml/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/about/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/about/</loc>
     <lastmod>2020-11-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/tags/blockchain/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/tags/blockchain/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/categories/blockchain/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/categories/blockchain/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/blog/blockchain/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/blog/blockchain/</loc>
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/blog/nlp/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/blog/nlp/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/tags/artificial-intelligence/</loc>
+  </url><url>
+    <loc>https://kouhoumed.com/tags/artificial-intelligence/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kouhoumed.com/blog/ds/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://kouhoumed.site/blog/ds/</loc>
-    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
-  </url>
-  
 </urlset>

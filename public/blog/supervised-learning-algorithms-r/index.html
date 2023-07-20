@@ -18,21 +18,14 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.76.5" /><meta itemprop="name" content="Supervised Learning algorithms with R (part 1)">
-<meta itemprop="description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language">
-<meta itemprop="datePublished" content="2021-01-05T00:00:00+00:00" />
+<meta name="generator" content="Hugo 0.110.0"><meta itemprop="name" content="Supervised Learning algorithms with R (part 1)">
+<meta itemprop="description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language"><meta itemprop="datePublished" content="2021-01-05T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-01-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2263">
-<meta itemprop="image" content="">
-
-
-
-<meta itemprop="keywords" content="machine learning,data science," />
-<meta property="og:title" content="Supervised Learning algorithms with R (part 1)" />
+<meta itemprop="wordCount" content="2270"><meta itemprop="image" content="">
+<meta itemprop="keywords" content="machine learning,data science," /><meta property="og:title" content="Supervised Learning algorithms with R (part 1)" />
 <meta property="og:description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kouhoumed.site/blog/supervised-learning-algorithms-r/" />
-<meta property="og:image" content="" />
+<meta property="og:url" content="https://kouhoumed.com/blog/supervised-learning-algorithms-r/" /><meta property="og:image" content="" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-01-05T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-01-05T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
@@ -41,7 +34,7 @@
 <meta name="twitter:title" content="Supervised Learning algorithms with R (part 1)"/>
 <meta name="twitter:description" content="We will discover some of the most common supervised learning algorithms and their implementation with R programming language"/>
 <meta name="twitter:site" content="@MohamedKouhou"/>
-<link rel="stylesheet" href="/css/bundle.min.d9e04ae08c9b3049b766dbd4aeab7d862c5ea1d13679b621490e0f5df5507497.css" integrity="sha256-2eBK4IybMEm3ZtvUrqt9hixeodE2ebYhSQ4PXfVQdJc="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/bundle.min.6ad9eb85bff384c75937a02036b01425a2ca63f19a96535b8ba5b181db62a4b3.css" integrity="sha256-atnrhb/zhMdZN6AgNrAUJaLKY/GallNbi6WxgdtipLM="><link rel="stylesheet" href="/css/add-on.css">
   <script>
     MathJax = {
       tex: {
@@ -122,37 +115,37 @@
 
   
     
-    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29&amp;url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -164,12 +157,20 @@
 
     <div id="wrapper">
       <section id="site-intro" >
+<<<<<<< HEAD
   <a href="/"><img src="https://kouhoumed.site/images/photo2.jpg" class="circle" width="100" alt="Picture" /></a>
+=======
+  <a href="/"><img src="https://kouhoumed.com/images/photo2.jpg" class="circle" width="100" alt="Picture" /></a>
+>>>>>>> e4ab7fcff6fa5bee878a9e9bc388888b92ddf91d
   <header>
     <h1>Mohamed Kouhou</h1>
   </header>
   <main>
+<<<<<<< HEAD
     <p>Business Information Systems and Data Analysis Master (MIAGE) at <a href='https://dauphine.psl.eu/en/' style='color : rgb(75, 145, 216)'>Paris Dauphine University</a> <br> Data Science Retail Banking apprentice at <a href='https://www.societegenerale.com/en' style='color : rgb(75, 145, 216)'>Société Générale</a> <br> <strong><a href='https://drive.google.com/file/d/1YPGMvfhIqVmxf6lhj7-H84tk9-j3Wn47/view?usp=sharing' style='color : rgb(75, 145, 216)'>→My résumé←</a></strong></p>
+=======
+    <p>Artificial Intelligence Student at ENSEIRB-MATMECA, Bordeaux INP <br> <strong><a href='https://drive.google.com/file/d/1AGU_13lzD8nbvmhze3XIYZzWvkxzMYdC/view?usp=share_link' style='color : rgb(75, 145, 216)'>→My résumé←</a></strong></p>
+>>>>>>> e4ab7fcff6fa5bee878a9e9bc388888b92ddf91d
   </main>
   
     <footer>
@@ -249,37 +250,37 @@
 
   
     
-    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29&amp;url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29&amp;url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f&amp;title=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f&amp;description=Supervised%20Learning%20algorithms%20with%20R%20%28part%201%29" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.site%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Mohamed%20Kouhou&amp;body=https%3a%2f%2fkouhoumed.com%2fblog%2fsupervised-learning-algorithms-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -319,65 +320,65 @@ A more general formula in an n-dimensional space is : $$d(x,y)=\sqrt{\sum_{i=1}^
 <p><strong>NB 3 :</strong> KNN does  support <a href="https://en.wikipedia.org/wiki/Categorical_variable">categorical variables</a> as features, simply because we cannot calculated the distance from them.</p>
 <p>The hands-on example<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> that we will work on will use the <code>Sonar</code> data set (signals) from <code>mlbench</code> library. <code>Sonar</code> is a system for the detection of objects under water and for measuring the water&rsquo;s depth by emitting and detecting sound pulses (the complete description can be found →<a href="https://cran.r-project.org/web/packages/mlbench/mlbench.pdf">here</a>). For our purposes, this is a two-class (class $R$ and class $M$) classification task with numeric data.</p>
 <p>First of all, let&rsquo;s install the required libraries :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># install the packages (note: this may take some time)</span>
-<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;class&#34;</span>)
-<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;caret&#34;</span>)
-<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;mlbench&#34;</span>)
-<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;e1071&#34;</span>)
-
-<span style="color:#a6e22e">library</span>(class)
-<span style="color:#a6e22e">library</span>(caret)
-<span style="color:#a6e22e">require</span>(mlbench)
-<span style="color:#a6e22e">library</span>(e1071)
-<span style="color:#a6e22e">library</span>(base)
-<span style="color:#a6e22e">require</span>(base)
-</code></pre></div><h4 id="step-1--loading-the-data">Step 1 : Loading the data</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># install the packages (note: this may take some time)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;caret&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;mlbench&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;e1071&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(class)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(caret)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">require</span>(mlbench)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(e1071)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(base)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">require</span>(base)
+</span></span></code></pre></div><h4 id="step-1--loading-the-data">Step 1 : Loading the data</h4>
 <p>Let&rsquo;s load the <code>Sonar</code> dataset and look at the first five rows :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">data</span>(Sonar)
-<span style="color:#a6e22e">head</span>(Sonar)
-</code></pre></div><h4 id="step-2--preparing-and-exploring-the-data">Step 2 : Preparing and exploring the data</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">nrow</span>(Sonar)
-<span style="color:#a6e22e">ncol</span>(Sonar)
-</code></pre></div><p>This will display the number of lines (<em><strong>208 observations</strong></em>) and the number of columns (<em><strong>61 variables</strong></em>), all numerical except for the Class variable which is categorical.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">data</span>(Sonar)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(Sonar)
+</span></span></code></pre></div><h4 id="step-2--preparing-and-exploring-the-data">Step 2 : Preparing and exploring the data</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">nrow</span>(Sonar)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ncol</span>(Sonar)
+</span></span></code></pre></div><p>This will display the number of lines (<em><strong>208 observations</strong></em>) and the number of columns (<em><strong>61 variables</strong></em>), all numerical except for the Class variable which is categorical.</p>
 <p>Let&rsquo;s check how many $R$ classes and $M$ classes <code>Sonar</code> contains :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(Sonar<span style="color:#f92672">$</span>Class)
-</code></pre></div><p>Now let&rsquo;s see if it contains any <code>NA</code> values in its columns :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">apply</span>(Sonar, <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">is.na</span>(x))) 
-</code></pre></div><p>We are going to manually split <code>Sonar</code> into training and test sets. Here, we will dedicate 70% of the dataset for traing, and the rest for testing :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">SEED <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">123</span>
-<span style="color:#a6e22e">set.seed</span>(SEED)
-data <span style="color:#f92672">&lt;-</span> Sonar[base<span style="color:#f92672">::</span><span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">nrow</span>(Sonar)), ] <span style="color:#75715e"># shuffle data first</span>
-bound <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(<span style="color:#ae81ff">0.7</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">nrow</span>(data))
-df_train <span style="color:#f92672">&lt;-</span> data[1<span style="color:#f92672">:</span>bound, ] 
-df_test <span style="color:#f92672">&lt;-</span> data<span style="color:#a6e22e">[</span>(bound <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(data), ]
-<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Number of training and test samples are &#34;</span>, <span style="color:#a6e22e">nrow</span>(df_train), <span style="color:#a6e22e">nrow</span>(df_test))
-</code></pre></div><p>Now, let&rsquo;s create the following dataframes :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">X_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">subset</span>(df_train, select<span style="color:#f92672">=-</span>Class)
-y_train <span style="color:#f92672">&lt;-</span> df_train<span style="color:#f92672">$</span>Class
-X_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">subset</span>(df_test, select<span style="color:#f92672">=-</span>Class) <span style="color:#75715e"># exclude Class for prediction</span>
-y_test <span style="color:#f92672">&lt;-</span> df_test<span style="color:#f92672">$</span>Class
-</code></pre></div><h4 id="tep-3--training-a-model-on-data">tep 3 : Training a model on data</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(Sonar<span style="color:#f92672">$</span>Class)
+</span></span></code></pre></div><p>Now let&rsquo;s see if it contains any <code>NA</code> values in its columns :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">apply</span>(Sonar, <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">function</span>(x) <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">is.na</span>(x))) 
+</span></span></code></pre></div><p>We are going to manually split <code>Sonar</code> into training and test sets. Here, we will dedicate 70% of the dataset for traing, and the rest for testing :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>SEED <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(SEED)
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">&lt;-</span> Sonar[base<span style="color:#f92672">::</span><span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">nrow</span>(Sonar)), ] <span style="color:#75715e"># shuffle data first</span>
+</span></span><span style="display:flex;"><span>bound <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(<span style="color:#ae81ff">0.7</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">nrow</span>(data))
+</span></span><span style="display:flex;"><span>df_train <span style="color:#f92672">&lt;-</span> data[1<span style="color:#f92672">:</span>bound, ] 
+</span></span><span style="display:flex;"><span>df_test <span style="color:#f92672">&lt;-</span> data<span style="color:#a6e22e">[</span>(bound <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span><span style="color:#a6e22e">nrow</span>(data), ]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Number of training and test samples are &#34;</span>, <span style="color:#a6e22e">nrow</span>(df_train), <span style="color:#a6e22e">nrow</span>(df_test))
+</span></span></code></pre></div><p>Now, let&rsquo;s create the following dataframes :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>X_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">subset</span>(df_train, select<span style="color:#f92672">=-</span>Class)
+</span></span><span style="display:flex;"><span>y_train <span style="color:#f92672">&lt;-</span> df_train<span style="color:#f92672">$</span>Class
+</span></span><span style="display:flex;"><span>X_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">subset</span>(df_test, select<span style="color:#f92672">=-</span>Class) <span style="color:#75715e"># exclude Class for prediction</span>
+</span></span><span style="display:flex;"><span>y_test <span style="color:#f92672">&lt;-</span> df_test<span style="color:#f92672">$</span>Class
+</span></span></code></pre></div><h4 id="tep-3--training-a-model-on-data">tep 3 : Training a model on data</h4>
 <p>Now, we are going to use <code>knn</code> function from <code>class</code> library with  $K=3$ :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">knn_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">knn</span>(train<span style="color:#f92672">=</span>X_train,
-                 test<span style="color:#f92672">=</span>X_test,
-                 cl<span style="color:#f92672">=</span>y_train,  <span style="color:#75715e"># class labels</span>
-                 k<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
-knn_model
-</code></pre></div><p>If you run the code above, you&rsquo;ll see the prediction made by <code>knn_model</code> with $K=3$ on <code>X_test</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>knn_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">knn</span>(train<span style="color:#f92672">=</span>X_train,
+</span></span><span style="display:flex;"><span>                 test<span style="color:#f92672">=</span>X_test,
+</span></span><span style="display:flex;"><span>                 cl<span style="color:#f92672">=</span>y_train,  <span style="color:#75715e"># class labels</span>
+</span></span><span style="display:flex;"><span>                 k<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>knn_model
+</span></span></code></pre></div><p>If you run the code above, you&rsquo;ll see the prediction made by <code>knn_model</code> with $K=3$ on <code>X_test</code>.</p>
 <h4 id="step-4--evaluate-the-model-performance">Step 4 : Evaluate the model performance</h4>
 <p>In order to see how many classes have been correctly or incorrectly classified, we can create a <strong><a href="https://en.wikipedia.org/wiki/Confusion_matrix">confusion matrix</a></strong> as follows :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">conf_mat <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(y_test, knn_model)
-conf_mat
-</code></pre></div><p>To compute the <strong><a href="https://en.wikipedia.org/wiki/Accuracy_and_precision">accuracy</a></strong>, we sum up all the correctly classified observations (located in diagonal) and divide it by the total number of classes :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Accuracy: &#34;</span>, <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(conf_mat))<span style="color:#f92672">/</span><span style="color:#a6e22e">sum</span>(conf_mat))
-</code></pre></div><p>To assess whether $K=3$ is a good choice and see whether $K=3$ leads to <a href="https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/">overfitting/underfitting</a> the data, we could use <code>knn.cv</code> which does the <strong>leave-one-out cross-validations</strong> for training set (i.e., it singles out a training sample one at a time and tries to view it as a new example and see what class label it assigns).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">knn_loocv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">knn.cv</span>(train<span style="color:#f92672">=</span>X_train, cl<span style="color:#f92672">=</span>y_train, k<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
-knn_loocv
-</code></pre></div><p>Let&rsquo;s create a confusion matrix to compute the accuracy of the training labels <code>y_train</code> and the cross-validated predictions <code>knn_loocv</code>, same as the above :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">conf_mat_cv <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(y_train, knn_loocv)
-conf_mat_cv
-<span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;LOOCV accuracy: &#34;</span>, <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(conf_mat_cv)) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(conf_mat_cv))
-</code></pre></div><p>The difference between the cross-validated accuracy and the test accuracy shows that $K=3$ leads to overfitting. Perhaps we should change $K$ to lessen the overfitting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>conf_mat <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(y_test, knn_model)
+</span></span><span style="display:flex;"><span>conf_mat
+</span></span></code></pre></div><p>To compute the <strong><a href="https://en.wikipedia.org/wiki/Accuracy_and_precision">accuracy</a></strong>, we sum up all the correctly classified observations (located in diagonal) and divide it by the total number of classes :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Accuracy: &#34;</span>, <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(conf_mat))<span style="color:#f92672">/</span><span style="color:#a6e22e">sum</span>(conf_mat))
+</span></span></code></pre></div><p>To assess whether $K=3$ is a good choice and see whether $K=3$ leads to <a href="https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/">overfitting/underfitting</a> the data, we could use <code>knn.cv</code> which does the <strong>leave-one-out cross-validations</strong> for training set (i.e., it singles out a training sample one at a time and tries to view it as a new example and see what class label it assigns).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>knn_loocv <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">knn.cv</span>(train<span style="color:#f92672">=</span>X_train, cl<span style="color:#f92672">=</span>y_train, k<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>knn_loocv
+</span></span></code></pre></div><p>Let&rsquo;s create a confusion matrix to compute the accuracy of the training labels <code>y_train</code> and the cross-validated predictions <code>knn_loocv</code>, same as the above :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>conf_mat_cv <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(y_train, knn_loocv)
+</span></span><span style="display:flex;"><span>conf_mat_cv
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;LOOCV accuracy: &#34;</span>, <span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">diag</span>(conf_mat_cv)) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(conf_mat_cv))
+</span></span></code></pre></div><p>The difference between the cross-validated accuracy and the test accuracy shows that $K=3$ leads to overfitting. Perhaps we should change $K$ to lessen the overfitting.</p>
 <h4 id="step-5--improve-the-performance-of-the-model">Step 5 : Improve the performance of the model</h4>
 <p>There are a couple things we can do in order to improve the performance of our model :</p>
 <ul>
@@ -385,27 +386,27 @@ conf_mat_cv
 <li><strong>Performing a <em>cross-vaidation</em></strong> : this consists of dividing the data into a finite number of subsets. Through each iteration, a subset is set aside, and the remaining subsets are used as the training set. The subset that was set aside is used as the test set (prediction). We will use <code>caret</code> library for this purpose.</li>
 </ul>
 <p>This is a method of cross-referencing the model built using its own data :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">SEED <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2016</span>
-<span style="color:#a6e22e">set.seed</span>(SEED)
-<span style="color:#75715e"># create the training data 70% of the overall Sonar data.</span>
-in_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">createDataPartition</span>(Sonar<span style="color:#f92672">$</span>Class, p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, list<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># create training indices</span>
-ndf_train <span style="color:#f92672">&lt;-</span> Sonar[in_train, ]
-ndf_test <span style="color:#f92672">&lt;-</span> Sonar[<span style="color:#f92672">-</span>in_train, ]
-</code></pre></div><p>Here, we specify the cross-validation method we want to use to find the best $K$ in grid search.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># lets create a function setup to do 5-fold cross-validation with 2 repeat.</span>
-ctrl <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">trainControl</span>(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;repeatedcv&#34;</span>, number<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, repeats<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
-
-nn_grid <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">expand.grid</span>(k<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>))
-nn_grid
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">set.seed</span>(SEED)
-
-best_knn <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">train</span>(Class<span style="color:#f92672">~</span>., data<span style="color:#f92672">=</span>ndf_train,
-                  method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;knn&#34;</span>,
-                  trControl<span style="color:#f92672">=</span>ctrl, 
-                  preProcess <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;center&#34;</span>, <span style="color:#e6db74">&#34;scale&#34;</span>),  <span style="color:#75715e"># standardize</span>
-                  tuneGrid<span style="color:#f92672">=</span>nn_grid)
-best_knn
-</code></pre></div><p>Running the code above, you&rsquo;ll find out that $K=1$ has the highest accuracy from repeated cross-validation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>SEED <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2016</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(SEED)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># create the training data 70% of the overall Sonar data.</span>
+</span></span><span style="display:flex;"><span>in_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">createDataPartition</span>(Sonar<span style="color:#f92672">$</span>Class, p<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>, list<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>) <span style="color:#75715e"># create training indices</span>
+</span></span><span style="display:flex;"><span>ndf_train <span style="color:#f92672">&lt;-</span> Sonar[in_train, ]
+</span></span><span style="display:flex;"><span>ndf_test <span style="color:#f92672">&lt;-</span> Sonar[<span style="color:#f92672">-</span>in_train, ]
+</span></span></code></pre></div><p>Here, we specify the cross-validation method we want to use to find the best $K$ in grid search.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># lets create a function setup to do 5-fold cross-validation with 2 repeat.</span>
+</span></span><span style="display:flex;"><span>ctrl <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">trainControl</span>(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;repeatedcv&#34;</span>, number<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, repeats<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nn_grid <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">expand.grid</span>(k<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>))
+</span></span><span style="display:flex;"><span>nn_grid
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(SEED)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>best_knn <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">train</span>(Class<span style="color:#f92672">~</span>., data<span style="color:#f92672">=</span>ndf_train,
+</span></span><span style="display:flex;"><span>                  method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;knn&#34;</span>,
+</span></span><span style="display:flex;"><span>                  trControl<span style="color:#f92672">=</span>ctrl, 
+</span></span><span style="display:flex;"><span>                  preProcess <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;center&#34;</span>, <span style="color:#e6db74">&#34;scale&#34;</span>),  <span style="color:#75715e"># standardize</span>
+</span></span><span style="display:flex;"><span>                  tuneGrid<span style="color:#f92672">=</span>nn_grid)
+</span></span><span style="display:flex;"><span>best_knn
+</span></span></code></pre></div><p>Running the code above, you&rsquo;ll find out that $K=1$ has the highest accuracy from repeated cross-validation.</p>
 <h2 id="decision-trees">Decision Trees</h2>
 <p><strong>Decision Trees</strong> are one of the most powerful predictive classification models. They are based on the analysis of a set of data points that describe the type of object we want to classify. A Decision tree is a flowchart like tree structure, where each <strong>internal node</strong> denotes a test on an attribute, each <strong>branch</strong> represents an outcome of the test, and each <strong>leaf node</strong> (terminal node) holds a class label.</p>
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Champignons_mushrooms_%28950475736%29.jpg" style="width: 50%;
@@ -444,70 +445,71 @@ $$\text{Information Gain = entropy(parent) – [average entropy(children)]}$$</p
 </code></pre>
 <h4 id="decision-tree-with-r">Decision tree with R</h4>
 <p>We will start by loading the data. We&rsquo;ll use <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/">UCI&rsquo;s</a> <code>Mushroom</code> dataset. Since this dataset is not inbuilt into R, we need to download it and load it into R :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">download.file</span>(<span style="color:#e6db74">&#34;https://ibm.box.com/shared/static/dpdh09s70abyiwxguehqvcq3dn0m7wve.data&#34;</span>, <span style="color:#e6db74">&#34;mushroom.data&#34;</span>)
-</code></pre></div><p>After downloading the file, we need to create a data frame to house the observations in the dataset. Since the dataset is structured using comma-separated values, we can use the <code>read.csv</code> function :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mushrooms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;mushroom.data&#34;</span>, header <span style="color:#f92672">=</span> F)
-mushrooms
-</code></pre></div><p>Once that&rsquo;s done, we have the data loaded up. However, the way that it is structured isn&rsquo;t the most intuitive. In the code cell below, we are adding the column names to the data frame with the <code>colnames</code> function. Additionally, since our data frame is composed of factors, we can rename some of these factors to something more easily understood by us using <code>levels</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Define column names for the mushrooms data frame.</span>
-<span style="color:#a6e22e">colnames</span>(mushrooms) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Class&#34;</span>,<span style="color:#e6db74">&#34;cap.shape&#34;</span>,<span style="color:#e6db74">&#34;cap.surface&#34;</span>,<span style="color:#e6db74">&#34;cap.color&#34;</span>,<span style="color:#e6db74">&#34;bruises&#34;</span>,<span style="color:#e6db74">&#34;odor&#34;</span>,<span style="color:#e6db74">&#34;gill.attachment&#34;</span>,<span style="color:#e6db74">&#34;gill.spacing&#34;</span>,
-                         <span style="color:#e6db74">&#34;gill.size&#34;</span>,<span style="color:#e6db74">&#34;gill.color&#34;</span>,<span style="color:#e6db74">&#34;stalk.shape&#34;</span>,<span style="color:#e6db74">&#34;stalk.root&#34;</span>,<span style="color:#e6db74">&#34;stalk.surface.above.ring&#34;</span>,
-                         <span style="color:#e6db74">&#34;stalk.surface.below.ring&#34;</span>,<span style="color:#e6db74">&#34;stalk.color.above.ring&#34;</span>,<span style="color:#e6db74">&#34;stalk.color.below.ring&#34;</span>,<span style="color:#e6db74">&#34;veil.type&#34;</span>,<span style="color:#e6db74">&#34;veil.color&#34;</span>,
-                         <span style="color:#e6db74">&#34;ring.number&#34;</span>,<span style="color:#e6db74">&#34;ring.type&#34;</span>,<span style="color:#e6db74">&#34;print&#34;</span>,<span style="color:#e6db74">&#34;population&#34;</span>,<span style="color:#e6db74">&#34;habitat&#34;</span>)
-<span style="color:#a6e22e">head</span>(mushrooms)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Define the factor names for &#34;Class&#34;</span>
-<span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>Class) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Edible&#34;</span>,<span style="color:#e6db74">&#34;Poisonous&#34;</span>)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Define the factor names for &#34;odor&#34;</span>
-<span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>odor) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Almonds&#34;</span>,<span style="color:#e6db74">&#34;Anise&#34;</span>,<span style="color:#e6db74">&#34;Creosote&#34;</span>,<span style="color:#e6db74">&#34;Fishy&#34;</span>,<span style="color:#e6db74">&#34;Foul&#34;</span>,<span style="color:#e6db74">&#34;Musty&#34;</span>,<span style="color:#e6db74">&#34;None&#34;</span>,<span style="color:#e6db74">&#34;Pungent&#34;</span>,<span style="color:#e6db74">&#34;Spicy&#34;</span>)
-<span style="color:#75715e"># Define the factor names for &#34;print&#34;</span>
-<span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>print) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Black&#34;</span>,<span style="color:#e6db74">&#34;Brown&#34;</span>,<span style="color:#e6db74">&#34;Buff&#34;</span>,<span style="color:#e6db74">&#34;Chocolate&#34;</span>,<span style="color:#e6db74">&#34;Green&#34;</span>,<span style="color:#e6db74">&#34;Orange&#34;</span>,<span style="color:#e6db74">&#34;Purple&#34;</span>,<span style="color:#e6db74">&#34;White&#34;</span>,<span style="color:#e6db74">&#34;Yellow&#34;</span>)
-<span style="color:#a6e22e">head</span>(mushrooms)
-</code></pre></div><p>Now let&rsquo;s build our model. We are going to use <code>rpart</code> library to create the decision tree, and <code>rpart.plot</code> to visualize it.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">download.file</span>(<span style="color:#e6db74">&#34;https://ibm.box.com/shared/static/dpdh09s70abyiwxguehqvcq3dn0m7wve.data&#34;</span>, <span style="color:#e6db74">&#34;mushroom.data&#34;</span>)
+</span></span></code></pre></div><p>After downloading the file, we need to create a data frame to house the observations in the dataset. Since the dataset is structured using comma-separated values, we can use the <code>read.csv</code> function :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>mushrooms <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;mushroom.data&#34;</span>, header <span style="color:#f92672">=</span> F)
+</span></span><span style="display:flex;"><span>mushrooms
+</span></span></code></pre></div><p>Once that&rsquo;s done, we have the data loaded up. However, the way that it is structured isn&rsquo;t the most intuitive. In the code cell below, we are adding the column names to the data frame with the <code>colnames</code> function. Additionally, since our data frame is composed of factors, we can rename some of these factors to something more easily understood by us using <code>levels</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Define column names for the mushrooms data frame.</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">colnames</span>(mushrooms) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Class&#34;</span>,<span style="color:#e6db74">&#34;cap.shape&#34;</span>,<span style="color:#e6db74">&#34;cap.surface&#34;</span>,<span style="color:#e6db74">&#34;cap.color&#34;</span>,<span style="color:#e6db74">&#34;bruises&#34;</span>,<span style="color:#e6db74">&#34;odor&#34;</span>,<span style="color:#e6db74">&#34;gill.attachment&#34;</span>,<span style="color:#e6db74">&#34;gill.spacing&#34;</span>,
+</span></span><span style="display:flex;"><span>                         <span style="color:#e6db74">&#34;gill.size&#34;</span>,<span style="color:#e6db74">&#34;gill.color&#34;</span>,<span style="color:#e6db74">&#34;stalk.shape&#34;</span>,<span style="color:#e6db74">&#34;stalk.root&#34;</span>,<span style="color:#e6db74">&#34;stalk.surface.above.ring&#34;</span>,
+</span></span><span style="display:flex;"><span>                         <span style="color:#e6db74">&#34;stalk.surface.below.ring&#34;</span>,<span style="color:#e6db74">&#34;stalk.color.above.ring&#34;</span>,<span style="color:#e6db74">&#34;stalk.color.below.ring&#34;</span>,<span style="color:#e6db74">&#34;veil.type&#34;</span>,<span style="color:#e6db74">&#34;veil.color&#34;</span>,
+</span></span><span style="display:flex;"><span>                         <span style="color:#e6db74">&#34;ring.number&#34;</span>,<span style="color:#e6db74">&#34;ring.type&#34;</span>,<span style="color:#e6db74">&#34;print&#34;</span>,<span style="color:#e6db74">&#34;population&#34;</span>,<span style="color:#e6db74">&#34;habitat&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(mushrooms)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Define the factor names for &#34;Class&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>Class) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Edible&#34;</span>,<span style="color:#e6db74">&#34;Poisonous&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Define the factor names for &#34;odor&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>odor) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Almonds&#34;</span>,<span style="color:#e6db74">&#34;Anise&#34;</span>,<span style="color:#e6db74">&#34;Creosote&#34;</span>,<span style="color:#e6db74">&#34;Fishy&#34;</span>,<span style="color:#e6db74">&#34;Foul&#34;</span>,<span style="color:#e6db74">&#34;Musty&#34;</span>,<span style="color:#e6db74">&#34;None&#34;</span>,<span style="color:#e6db74">&#34;Pungent&#34;</span>,<span style="color:#e6db74">&#34;Spicy&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the factor names for &#34;print&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">levels</span>(mushrooms<span style="color:#f92672">$</span>print) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Black&#34;</span>,<span style="color:#e6db74">&#34;Brown&#34;</span>,<span style="color:#e6db74">&#34;Buff&#34;</span>,<span style="color:#e6db74">&#34;Chocolate&#34;</span>,<span style="color:#e6db74">&#34;Green&#34;</span>,<span style="color:#e6db74">&#34;Orange&#34;</span>,<span style="color:#e6db74">&#34;Purple&#34;</span>,<span style="color:#e6db74">&#34;White&#34;</span>,<span style="color:#e6db74">&#34;Yellow&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(mushrooms)
+</span></span></code></pre></div><p>Now let&rsquo;s build our model. We are going to use <code>rpart</code> library to create the decision tree, and <code>rpart.plot</code> to visualize it.
 But first, install <code>rpart.plot</code> if it&rsquo;s not already installed.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rpart&#34;</span>)
-<span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rpart.plot&#34;</span>)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Import our required libraries</span>
-<span style="color:#a6e22e">library</span>(rpart)
-<span style="color:#a6e22e">library</span>(rpart.plot)
-</code></pre></div><p>To create our decision tree model, we can use the <code>rpart</code> function. <code>rpart</code> is simple to use: you provide it a <code>formula</code>, show it the dataset it is supposed to use and choose a method (either &ldquo;class&rdquo; for classification or &ldquo;anova&rdquo; for regression).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rpart&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;rpart.plot&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Import our required libraries</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(rpart)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(rpart.plot)
+</span></span></code></pre></div><p>To create our decision tree model, we can use the <code>rpart</code> function. <code>rpart</code> is simple to use: you provide it a <code>formula</code>, show it the dataset it is supposed to use and choose a method (either &ldquo;class&rdquo; for classification or &ldquo;anova&rdquo; for regression).</p>
 <p>A great trick to know when handling very large structured datasets (our dataset has over 20 columns we want to use!) is that in <code>formula</code> declarations, one can use the <code>.</code> operator as a quick way of designating &ldquo;all other columns&rdquo; to R. You can also <code>print</code> the Decision Tree model to retrieve a summary describing it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Create a classification decision tree using &#34;Class&#34; as the variable we want to predict and everything else as its predictors.</span>
-myDecisionTree <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(Class <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> mushrooms, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
-<span style="color:#75715e"># Print out a summary of our created model.</span>
-<span style="color:#a6e22e">print</span>(myDecisionTree)
-</code></pre></div><p>Now that we have our model, we can draw it to gain a better understanding of how it is classifying the data points. We can use the <code>rpart.plot</code>function &ndash; a specialized function for plotting trees &ndash; to render our model. This function takes on some parameters for visualizing the tree in different ways &ndash; try changing the type (from 1 to 4) parameter to see what happens!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># Create a classification decision tree using &#34;Class&#34; as the variable we want to predict and everything else as its predictors.</span>
+</span></span><span style="display:flex;"><span>myDecisionTree <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(Class <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> mushrooms, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Print out a summary of our created model.</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(myDecisionTree)
+</span></span></code></pre></div><p>Now that we have our model, we can draw it to gain a better understanding of how it is classifying the data points. We can use the <code>rpart.plot</code>function &ndash; a specialized function for plotting trees &ndash; to render our model. This function takes on some parameters for visualizing the tree in different ways &ndash; try changing the type (from 1 to 4) parameter to see what happens!</p>
 <p>If you run the code above, you&rsquo;ll see that our decision tree has perfect accuracy when classifying poisonous mushrooms, and almost perfect accuracy when dealing with edible ones.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">newCase  <span style="color:#f92672">&lt;-</span> mushrooms[10,<span style="color:#ae81ff">-1</span>]
-newCase
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">predict</span>(myDecisionTree, newCase, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
-</code></pre></div><p><strong>Model accuracy :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>newCase  <span style="color:#f92672">&lt;-</span> mushrooms[10,<span style="color:#ae81ff">-1</span>]
+</span></span><span style="display:flex;"><span>newCase
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">predict</span>(myDecisionTree, newCase, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span></code></pre></div><p><strong>Model accuracy :</strong></p>
 <p>Let&rsquo;s split our dataset into traing set and test set :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## 75% of the sample size</span>
-n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">nrow</span>(mushrooms)
-smp_size <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(<span style="color:#ae81ff">0.75</span> <span style="color:#f92672">*</span> n)
-
-<span style="color:#75715e">## set the seed to make your partition reproductible</span>
-<span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
-train_ind <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n), size <span style="color:#f92672">=</span> smp_size)
-
-mushrooms_train <span style="color:#f92672">&lt;-</span> mushrooms[train_ind, ]
-mushrooms_test <span style="color:#f92672">&lt;-</span> mushrooms[<span style="color:#f92672">-</span>train_ind, ]
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">newDT <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(Class <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> mushrooms_train, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">result <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(newDT, mushrooms_test[,<span style="color:#ae81ff">-1</span>], type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(result)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">head</span>(mushrooms_test<span style="color:#f92672">$</span>Class)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(mushrooms_test<span style="color:#f92672">$</span>Class, result)
-</code></pre></div><section class="footnotes" role="doc-endnotes">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">## 75% of the sample size</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">nrow</span>(mushrooms)
+</span></span><span style="display:flex;"><span>smp_size <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">floor</span>(<span style="color:#ae81ff">0.75</span> <span style="color:#f92672">*</span> n)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## set the seed to make your partition reproductible</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
+</span></span><span style="display:flex;"><span>train_ind <span style="color:#f92672">&lt;-</span> base<span style="color:#f92672">::</span><span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n), size <span style="color:#f92672">=</span> smp_size)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mushrooms_train <span style="color:#f92672">&lt;-</span> mushrooms[train_ind, ]
+</span></span><span style="display:flex;"><span>mushrooms_test <span style="color:#f92672">&lt;-</span> mushrooms[<span style="color:#f92672">-</span>train_ind, ]
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>newDT <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(Class <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> mushrooms_train, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>result <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(newDT, mushrooms_test[,<span style="color:#ae81ff">-1</span>], type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(result)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">head</span>(mushrooms_test<span style="color:#f92672">$</span>Class)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>base<span style="color:#f92672">::</span><span style="color:#a6e22e">table</span>(mushrooms_test<span style="color:#f92672">$</span>Class, result)
+</span></span></code></pre></div><p>That&rsquo;s it! See you on another cool article :)</p>
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
-<p>Credit: <a href="https://www.linkedin.com/in/ehsanmkermani">Ehsan M. Kermani</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:1">
+<p>Credit: <a href="https://www.linkedin.com/in/ehsanmkermani">Ehsan M. Kermani</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
-<p>Credit: <a href="https://www.linkedin.com/in/saeedaghabozorgi/?originalSubdomain=ca">Saeed Aghabozorgi</a>, <a href="https://www.linkedin.com/in/walter-gomes/">Walter Gomes de Amorim Junior</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:2">
+<p>Credit: <a href="https://www.linkedin.com/in/saeedaghabozorgi/?originalSubdomain=ca">Saeed Aghabozorgi</a>, <a href="https://www.linkedin.com/in/walter-gomes/">Walter Gomes de Amorim Junior</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
     </div>
     <footer>
@@ -724,7 +726,7 @@ mushrooms_test <span style="color:#f92672">&lt;-</span> mushrooms[<span style="c
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
       <script src="/js/highlight.js"></script>
     
-    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.5955090a3253deadcd66071270aa2274dabe15ffc97094cec252d87b6f3f00bf.js" integrity="sha256-WVUJCjJT3q3NZgcScKoidNq&#43;Ff/JcJTOwlLYe28/AL8="></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.54bc02769e1cb62203144d6b8c09b8ab2195473cc8023456886f4cb8dfc95aa0.js" integrity="sha256-VLwCdp4ctiIDFE1rjAm4qyGVRzzIAjRWiG9MuN/JWqA="></script>
     <script src="/js/add-on.js"></script>
     </div>
   </body>

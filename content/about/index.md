@@ -13,7 +13,7 @@ This website will give you an overview of my academic and professional career, a
 I am a Business Information Systems and Data Analysis student at **[Paris Dauphine University](https://dauphine.psl.eu/en/)**. I'm also working as a Data Science Retail Banking apprentice at **[Société Générale](https://www.societegenerale.com/en)**.
   
 
-![picture](/images/2.JPG)  
+![picture](/images/MyPhoto1.jpeg)  
 
 My educational career was marked by a lot of moving between cities and compuses (Akka, Tata, Taroudant, Agadir, Rabat...). And this made a significant contribution in the process of developping my personality, building my network, and acquiring a variety of skills.    
 
