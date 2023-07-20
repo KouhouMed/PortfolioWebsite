@@ -6,17 +6,18 @@ date = "2020-11-08"
 layout = "about"
 +++
 
-→<strong><a href='/files/mon_CV_V4.pdf' style='color : rgb(61, 101, 194);'> [CV] </a></strong>← <br> <br>  
+→<strong><a href='https://drive.google.com/file/d/1YPGMvfhIqVmxf6lhj7-H84tk9-j3Wn47/view?usp=drive_link' style='color : rgb(61, 101, 194);'> [CV] </a></strong>← <br> <br>  
 
 This website will give you an overview of my academic and professional career, as well as some of my interests. And you will also find some articles about different topics.  
+
+I am a Business Information Systems and Data Analysis student at **[Paris Dauphine University](https://dauphine.psl.eu/en/)**. I'm also working as a Data Science Retail Banking apprentice at **[Société Générale](https://www.societegenerale.com/en)**.
   
-I am a Data Engineering student in my 2<sup>nd</sup> year at the **[National Institute of Posts and Telecommunications](http://inpt.ac.ma)**, _Rabat, Morocco_.
 
 ![picture](/images/2.JPG)  
 
 My educational career was marked by a lot of moving between cities and compuses (Akka, Tata, Taroudant, Agadir, Rabat...). And this made a significant contribution in the process of developping my personality, building my network, and acquiring a variety of skills.    
 
-I had my baccalaureate in Mathematical Sciences in 2017 with an Honours degree at the __Technical Highschool__, _Taroudant, Morocco_. I then went to __Mohammed Reda Slaoui Preparatory Classes__ in _Agadir_ the same year and studied Maths And Physics for two years. In 2019, I went to the **[National Institute of Posts and Telecommunications](http://inpt.ac.ma)** in _Rabat_ where I'm still studying __Data Engineering__ in my 2<sup>nd</sup> year now.  
+I had my baccalaureate in Mathematical Sciences in 2017 with an Honours degree at the __Technical Highschool__, _Taroudant, Morocco_. I then went to __Mohammed Reda Slaoui Preparatory Classes__ in _Agadir_ the same year and studied Maths And Physics for two years. In 2019, I went to the **[National Institute of Posts and Telecommunications](http://inpt.ac.ma)** in _Rabat_ where I studying __Data Engineering__ for 2 years before moving to Bordeaux in order to study _Artificial intelligence_ at **[ENSEIRB-MATMECA](https://enseirb-matmeca.bordeaux-inp.fr/fr)** as part of an exchange programme. I successfully got my Engineer diploma, and then, in 2022, I started studying Business Information Systems and Data Analysis at **[Paris Dauphine University](https://dauphine.psl.eu/en/)**
 
 ### Main interests and projects
 
